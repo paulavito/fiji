@@ -271,7 +271,8 @@
 
 
 /* boton para subir al hacer scroll */
-.ir-arriba-boton{           
+.ir-arriba-boton{    
+    display: none;       
     position: fixed;
     z-index: 1000;
     right: 25px;
@@ -495,18 +496,539 @@ form div{
     } 
 
 
+/* pagina home */
+
+.imagen{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);     
+    
+}
+
+.slide-frutas img{
+    
+    background-image: url("../imagenes/slidefrutas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-attachment: fixed; 
+    width: 100%; 
+}
+
+.best-deals{
+    padding: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.best-deals h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.destacados{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    justify-items: center;
+    
+}
+
+.mujer{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    max-width: 500px;    
+}
+
+.destacados{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+
+
+.destacados ul li{
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;
+    flex-basis: 50%;
+    padding-bottom: 3%;    
+    
+}
+
+.destacados ul li img{
+    width: 60%;
+    max-width: 400px;  
+    
+}
+
+
+.imagen-texto img{
+    background-image: url("../imagenes/pañococinabollotapado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;       
+}
 
 
 
+.productos-fiji-down ul{    
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    
+}
 
-
-    .destacados{
-        width: 100%;
+.productos-fiji-down ul li{
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;   
         
+}
+
+
+.productos-fiji-down ul li img{
+   width: 100%;
+   max-width: 300px;
+}
+
+.productos-fiji-down ul li p{
+    padding-top: 4%;
+}
+ 
+
+/* footer */
+
+.footer-arriba{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);    
+    height: 15rem;
+    padding:2%;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    	
+}
+
+.footer-arriba h2{
+    grid-column: 4/10;
+    grid-row: 1/1;
+    padding-top: 2%;
+    border-top:solid 1px #a1a1a1;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    align-self: center;  
+}
+
+.footer-arriba img{
+    grid-column: 6/8;
+    grid-row: 2/2;
+    width: 20%;  
+    align-self: center;  
+         
+}
+
+.footer-arriba legend{
+    grid-column: 4/10;
+    grid-row: 3/4;
+    align-self: center;
+}
+.newsletter legend{
+    padding-bottom: 2%;
+
+}
+.newsletter{
+    grid-column: 6/8;
+    grid-row: 4/4;
+    align-self: center;
+}
+.box-lateral{
+    background-color: black;
+    color: white;    
+} 
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr); 
+    background-color: #F2F5E0;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1%;    
+    height: 20rem;   
+    align-items: center;
+  
+}
+.redes-sociales{
+    grid-column: 5/7;
+    grid-row: 1/1;  
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-bottom: 1%;             
+}
+.footer-info{
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+.footer-info ul li{      
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+
+.footer-contact{
+    grid-column: 5/7;
+    grid-row: 3/4;
+    padding: 2%;    
+}
+.footer-contact p{
+    padding: 1%;
+} 
+.desarrollado{
+    grid-column: 5/7;
+    grid-row: 4/5;
+}
+
+
+/* boton para subir al hacer scroll */
+.ir-arriba-boton{    
+    display: block;       
+    position: fixed;
+    z-index: 1000;
+    right: 25px;
+    bottom: 25px;
+    transition: all .2s;
+    align-self: center; 
+    cursor: pointer;
+}
+.ir-arriba-boton:hover {    
+    transform: scale(1.1);
+}
+.to-top{
+    border-radius: 50%;
+}
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px){
+    .nav-background{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        justify-items: center;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(1,1fr);
+        height: 4rem;       
+        
+    }
+    .nav-background img{
+       
+        width: 30%;
+        max-width: 200px;
+        
     }
 
+    .links-iconos{
+        grid-row: 1/1;
+        grid-column: 12/12;
+    
+     
+        justify-content: space-between;
+        align-content: center
+    }
+    .nav-background a{
+        grid-row: 1/1;
+        grid-column: 2/3;
+        text-decoration: none;
+        display: inline-block;
+        font-size: rem;
+        color: #000000;
+    }
+    
+    .links-iconos{
+        grid-row: 1/1;
+        grid-column: 12/12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center
+    }
+    
+    .nav-link{
+        padding-top: 1%;
+        text-decoration: none;
+        color: #000000;
+        padding-left: 2%;
+        display: flex;     
+        flex-wrap: wrap;  
+        height: 40px;
+    } 
+
+
+/* pagina home */
+
+.imagen{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);     
+    
+}
+
+.slide-frutas img{
+    
+    background-image: url("../imagenes/slidefrutas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-attachment: fixed; 
+    width: 100%; 
+}
+
+.best-deals{
+    padding: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.best-deals h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.destacados{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    justify-items: center;
+    
+}
+
+.mujer{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    max-width: 500px;    
+}
+
+.destacados{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+
+
+.destacados ul li{
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;
+    flex-basis: 50%;
+    padding-bottom: 3%;    
+    
+}
+
+.destacados ul li img{
+    width: 60%;
+    max-width: 400px;  
+    
+}
+
+
+.imagen-texto img{
+    background-image: url("../imagenes/pañococinabollotapado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;       
+}
+
+
+
+.productos-fiji-down ul{    
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    
+}
+
+.productos-fiji-down ul li{
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;   
+        
+}
+
+
+.productos-fiji-down ul li img{
+   width: 100%;
+   max-width: 300px;
+}
+
+.productos-fiji-down ul li p{
+    padding-top: 4%;
+}
+ 
+
+/* footer */
+
+.footer-arriba{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);    
+    height: 15rem;
+    padding:2%;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    	
+}
+
+.footer-arriba h2{
+    grid-column: 4/10;
+    grid-row: 1/1;
+    padding-top: 2%;
+    border-top:solid 1px #a1a1a1;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    align-self: center;  
+}
+
+.footer-arriba img{
+    grid-column: 6/8;
+    grid-row: 2/2;
+    width: 20%;  
+    align-self: center;  
+         
+}
+
+.footer-arriba legend{
+    grid-column: 4/10;
+    grid-row: 3/4;
+    align-self: center;
+}
+.newsletter legend{
+    padding-bottom: 2%;
+
+}
+.newsletter{
+    grid-column: 6/8;
+    grid-row: 4/4;
+    align-self: center;
+}
+.box-lateral{
+    background-color: black;
+    color: white;    
+} 
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr); 
+    background-color: #F2F5E0;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1%;    
+    height: 20rem;   
+    align-items: center;
+  
+}
+.redes-sociales{
+    grid-column: 5/7;
+    grid-row: 1/1;  
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-bottom: 1%;             
+}
+.footer-info{
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+.footer-info ul li{      
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+
+.footer-contact{
+    grid-column: 5/7;
+    grid-row: 3/4;
+    padding: 2%;    
+}
+.footer-contact p{
+    padding: 1%;
+} 
+.desarrollado{
+    grid-column: 5/7;
+    grid-row: 4/5;
+}
+
+
+/* boton para subir al hacer scroll */
+.ir-arriba-boton{    
+    display: block;       
+    position: fixed;
+    z-index: 1000;
+    right: 25px;
+    bottom: 25px;
+    transition: all .2s;
+    align-self: center; 
+    cursor: pointer;
+}
+.ir-arriba-boton:hover {    
+    transform: scale(1.1);
+}
+.to-top{
+    border-radius: 50%;
+}
+
+
+
+
+
+    
 }
