@@ -327,7 +327,7 @@
     border-radius: 50%;
 }
 
-/* pagina productos */
+/* ==== pagina productos ==== */
 
 .banner-product{
     background-image: url("../imagenes/slidemate.jpg ");
@@ -338,51 +338,63 @@
 }
 
 .titulo-articulos{
-    display: flex;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 4%; 
 }
 
 
 .titulo-articulos h2{
-    padding: 2%;
+   
+    font-size: 1.2rem;
 }
 
 .titulo-articulos h3{
-    padding: 2.2%;
+    
+    font-size: 0.8rem;
       
 }
 
+.articulos-varios{
+    justify-content: space-between;
+    grid-column-gap: 10px;
+    text-decoration: none;
+    padding: 5%;
 
-.articulos-varios ul{    
-    padding-top: 4%;
-    padding-bottom: 4%;
+}
+
+.articulos-varios ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 3em 1em;
+    
+    
+}
+
+.articulos-varios ul li{    
+    padding: 0;
     display: flex;
     align-items: center;
-    
-    flex-wrap: wrap;  
-    justify-content: space-evenly;
-    
+    flex-wrap: wrap;      
+       
 }
 
-.articulos-varios ul li{
-    padding-top: 4%;
-    list-style-type: none;
-    text-align: center;   
-        
+.articulos-varios img{
+    width: 100%;
+    max-width: 1000px;
 }
 
-
-.articulos-varios ul li img{
-   width: 100%;
-   max-width: 300px;
-}
-
-.articulos-varios ul li p{
-    padding-top: 4%;
+.articulos-varios p{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    font-size: 0.8rem;    
 }
 
 
 
-/* pagina sonbre nosotros */
+/* ==== pagina sonbre nosotros ==== */
 
 .about-us img{
     height: 50vh;
@@ -407,7 +419,7 @@
     padding-right: 2%;
 }
 
-/* pagina info & ayuda */
+/* ==== pagina info & ayuda ==== */
 
 .info-fiji div{
     padding: 2%;
@@ -425,7 +437,7 @@
     max-width: 1200px;
 }
 
-/* pagina contacto */
+/* ==== pagina contacto ==== */
 
 .contacto{
     display: flex;
@@ -739,6 +751,9 @@ form div{
 }
 
 
+
+
+/* ==== pagina productos =====*/
 
 
     
