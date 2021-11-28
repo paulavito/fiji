@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
-
 * {
     margin: 0%;
     padding: 0%;
@@ -7,28 +6,29 @@
 }
 
 
-.nav-background{
+/* navegation bar */
+
+.nav-background {
     display: grid;
-    
     grid-template-rows: 1fr;
-    height: 4rem;   
-    align-items: center;   
+    height: 4rem;
+    align-items: center;
     background-color: #ffffff;
     position: sticky;
     top: 0%;
     padding-left: 2%;
     padding-right: 2%;
-    border-bottom:solid 1px #e2e2e2;
-    
+    border-bottom: solid 1px #e2e2e2;
 }
-.nav-background img{
+
+.nav-background img {
     grid-row: 1/1;
     grid-column: 1/2;
     width: 50%;
     max-width: 200px;
 }
 
-.nav-background a{
+.nav-background a {
     grid-row: 1/1;
     grid-column: 2/3;
     text-decoration: none;
@@ -37,7 +37,7 @@
     color: #000000;
 }
 
-.links-iconos{
+.links-iconos {
     grid-row: 1/1;
     grid-column: 12/12;
     display: flex;
@@ -47,283 +47,271 @@
     padding-left: 2%;
 }
 
-.nav-link{
+
+/* hamburguer menu === pendiente */
+
+.nav-link {
     padding-top: 3%;
     text-decoration: none;
     color: #000000;
     padding-left: 2%;
-    display: flex;     
-    flex-wrap: wrap;  
+    display: flex;
+    flex-wrap: wrap;
     height: 30px;
     font-size: 0.8rem;
+}
 
-}    
 
 /* pagina home */
 
-.imagen{
+.imagen {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;     
-    
+    grid-template-rows: 1fr;
 }
 
-.slide-frutas img{
-    
+.slide-frutas img {
     background-image: url("../imagenes/slidefrutas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;   
-    background-attachment: fixed; 
-    width: 100%; 
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
 }
 
-.best-deals{    
-
+.best-deals {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    
 }
 
-.best-deals h3{
+.best-deals h3 {
     font-size: 1.2rem;
     text-align: center;
     padding-top: 4%;
     padding-bottom: 2%;
 }
-.destacados{
+
+.destacados {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 10px;
     justify-items: center;
     padding-bottom: 10%;
-    
 }
 
-.mujer{
+.mujer {
     align-self: center;
     width: 90%;
-    max-width: 500px;    
+    max-width: 500px;
 }
 
-.destacados ul{    
+.destacados ul {
     padding: 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;  
-       
+    flex-wrap: wrap;
 }
 
-.destacados ul li{
+.destacados ul li {
     padding-top: 4%;
     list-style-type: none;
     text-align: center;
     flex-basis: 50%;
-    padding-bottom: 3%;    
-    
+    padding-bottom: 3%;
 }
 
-.destacados ul li img{
+.destacados ul li img {
     width: 80%;
-    max-width: 400px;  
-    
+    max-width: 400px;
 }
 
-
-.imagen-texto img{
-    
+.imagen-texto img {
     background-image: url("../imagenes/pañococinabollotapado.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    
-    background-attachment: fixed;       
+    background-attachment: fixed;
 }
 
-
-.productos-fiji-down{
+.productos-fiji-down {
     justify-content: space-between;
     grid-column-gap: 10px;
     text-decoration: none;
     padding: 5%;
-
 }
 
-.productos-fiji-down ul{
+.productos-fiji-down ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 3em 1em;
-    
-    
 }
 
-.productos-fiji-down ul li{    
+.productos-fiji-down ul li {
     padding: 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;      
-       
+    flex-wrap: wrap;
 }
 
-.productos-fiji-down img{
+.productos-fiji-down img {
     width: 100%;
     max-width: 1000px;
 }
 
-.productos-fiji-down p{
+.productos-fiji-down p {
     padding-top: 2%;
     padding-bottom: 8%;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
     text-align: center;
 }
-
 
 
 /* footer */
 
-.footer-arriba{
+.footer-arriba {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;    
+    grid-template-rows: 1fr;
     height: 15rem;
-    padding:2%;
+    padding: 2%;
     text-align: center;
     justify-items: center;
     align-content: center;
-    	
 }
 
-.footer-arriba h2{
+.footer-arriba h2 {
     grid-column: 4/10;
     grid-row: 1/1;
     padding-top: 5%;
-    border-top:solid 1px #a1a1a1;
+    border-top: solid 1px #a1a1a1;
     padding-bottom: 2%;
     font-size: 1.5rem;
-    align-self: center; 
-    letter-spacing: .4em;    
+    align-self: center;
+    letter-spacing: .4em;
 }
 
-.footer-arriba img{
+.footer-arriba img {
     grid-column: 6/8;
     grid-row: 2/2;
-    width: 20%;  
-    align-self: center; 
-    padding-bottom: 8%; 
+    width: 20%;
+    align-self: center;
+    padding-bottom: 8%;
     padding-top: 8%;
-         
 }
 
-.footer-arriba legend{
+.footer-arriba legend {
     grid-column: 4/10;
     grid-row: 3/4;
     align-self: center;
-
 }
-.newsletter legend{
+
+.newsletter legend {
     padding-bottom: 2%;
-
 }
 
-.newsletter{
+.newsletter {
     grid-column: 6/8;
     grid-row: 4/4;
     align-self: center;
-     
 }
-.newsletter-email{
+
+.newsletter-email {
     padding-top: 5%;
     padding-bottom: 5%;
-    
-
 }
-.button-lateral{
+
+.button-lateral {
     background-color: #000000;
-    color: #ffffff; 
+    color: #ffffff;
     border: #000000;
     height: 1.3rem;
-    width: 3rem;   
-   
-} 
+    width: 3rem;
+}
 
-.footer{
+.footer {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #F2F5E0;
-    font-size: 0.8rem;   
-    height: 15rem;   
+    font-size: 0.8rem;
+    height: 15rem;
     text-align: center;
-    
-  
-}
-.redes-sociales{
-    grid-column: 4/8;
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-evenly;
-    font-size: 1rem;
-    padding-bottom: 1%;  
-    padding-top: 2%; 
-    align-self: center;          
-}
-.footer-info{
-    grid-column: 4/8;
-    grid-row: 2/3;
-    
 }
 
-.footer-info ul li{      
+.redes-sociales {
+    grid-column: 4/8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    align-self: center;
+}
+
+.footer-info {
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+.footer-info ul li {
     display: inline-block;
     font-size: 0.8rem;
     padding-top: 10px;
     padding-left: 2%;
-       
 }
 
-.footer-contact{
-    
+.footer-contact {
     grid-column: 5/7;
     grid-row: 3/4;
-    padding: 4%;   
-    
+    padding: 4%;
 }
-.footer-contact p{
+
+.footer-contact p {
     padding-top: 5%;
     padding: 1%;
-   
-} 
-.desarrollado{
+}
+
+.desarrollado {
     grid-column: 5/7;
     grid-row: 4/5;
 }
 
+.desarrollado a {
+    text-decoration: none;
+    color: #000000;
+}
+
 
 /* boton para subir al hacer scroll */
-.ir-arriba-boton{    
-    display: none;       
+
+.ir-arriba-boton {
+    display: none;
     position: fixed;
     z-index: 1000;
     right: 25px;
     bottom: 25px;
     transition: all .2s;
-    align-self: center; 
+    align-self: center;
     cursor: pointer;
 }
-.ir-arriba-boton:hover {    
+
+.ir-arriba-boton:hover {
     transform: scale(1.1);
 }
-.to-top{
+
+.to-top {
     border-radius: 50%;
 }
 
+
 /* ==== pagina productos ==== */
 
-.banner-product{
+.banner-product {
     background-image: url("../imagenes/slidemate.jpg ");
     background-size: cover;
     background-repeat: no-repeat;
@@ -331,81 +319,70 @@
     width: 100%;
 }
 
-.titulo-articulos{
+.titulo-articulos {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-    padding: 4%; 
+    align-items: center;
+    padding: 4%;
 }
 
-
-.titulo-articulos h2{
-   
+.titulo-articulos h2 {
     font-size: 1.2rem;
 }
 
-.titulo-articulos h3{
-    
+.titulo-articulos h3 {
     font-size: 0.8rem;
-      
 }
 
-.articulos-varios{
+.articulos-varios {
     justify-content: space-between;
     grid-column-gap: 10px;
     text-decoration: none;
     padding: 5%;
-
 }
 
-.articulos-varios ul{
+.articulos-varios ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 3em 1em;
-    
-    
 }
 
-.articulos-varios ul li{    
+.articulos-varios ul li {
     padding: 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;      
-       
+    flex-wrap: wrap;
 }
 
-.articulos-varios img{
+.articulos-varios img {
     width: 100%;
     max-width: 1000px;
 }
 
-.articulos-varios p{
+.articulos-varios p {
     padding-top: 2%;
     padding-bottom: 8%;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
 }
-
 
 
 /* ==== pagina sonbre nosotros ==== */
 
-.about-us img{
+.about-us img {
     height: 50vh;
     display: block;
     margin: auto;
 }
 
-.about-us h2{
+.about-us h2 {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     padding: 2%;
-
 }
 
-
-.about-us p{
+.about-us p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,16 +390,16 @@
     padding-right: 2%;
 }
 
+
 /* ==== pagina info & ayuda ==== */
 
-.info-fiji div{
+.info-fiji div {
     padding: 2%;
     padding-left: 2%;
     padding-right: 2%;
 }
 
-
-.info-fiji img{
+.info-fiji img {
     background-image: url("../imagenes/info-envio.jpg ");
     background-size: cover;
     background-repeat: no-repeat;
@@ -431,29 +408,32 @@
     max-width: 1200px;
 }
 
+
 /* ==== pagina contacto ==== */
 
-.contacto{
+.contacto {
     display: flex;
     justify-content: center;
     text-align: center;
-    
 }
-.contacto h2{
+
+.contacto h2 {
     font-size: 2rem;
     padding: 2%;
     padding-top: 2%;
     padding-bottom: 5%;
 }
-.contacto p{
+
+.contacto p {
     font-size: 1.2rem;
 }
-.contacto ul li{
+
+.contacto ul li {
     font-size: 1rem;
     text-decoration: none;
     padding-top: 3%;
     list-style: none;
-} 
+}
 
 form {
     width: 100%;
@@ -466,53 +446,46 @@ form {
     padding: 2%;
 }
 
-
-form div{
+form div {
     padding: 2%;
 }
 
-.box{
-    display: flex;     
-    flex-wrap: wrap; 
+.box {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     height: 50px;
     width: 500px;
 }
 
-
-.enviar input{
-   background-color: #000000;
-   color: #ffffff;
-   height: 40px;
-   width: 70px;
-  
+.enviar input {
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    width: 70px;
 }
+
 
 /* ====== Media Queries ======== */
 
-@media (min-width: 768px){
-    .nav-background{
+@media (min-width: 768px) {
+    .nav-background {
         display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(1,1fr);
-        height: 4rem;       
-        
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 4rem;
     }
-    .nav-background img{
-       
+    .nav-background img {
         width: 30%;
         max-width: 200px;
-        
     }
-
-    .links-iconos{
+    .links-iconos {
         grid-row: 1/1;
-        grid-column: 12/12; 
-     
+        grid-column: 12/12;
         justify-content: space-between;
         align-content: center
     }
-    .nav-background a{
+    .nav-background a {
         grid-row: 1/1;
         grid-column: 2/3;
         text-decoration: none;
@@ -520,8 +493,7 @@ form div{
         font-size: rem;
         color: #000000;
     }
-    
-    .links-iconos{
+    .links-iconos {
         grid-row: 1/1;
         grid-column: 12/12;
         display: flex;
@@ -529,320 +501,234 @@ form div{
         justify-content: space-between;
         align-content: center
     }
-    
-    .nav-link{
+    .nav-link {
         padding-top: 1%;
         text-decoration: none;
         color: #000000;
         padding-left: 2%;
-        display: flex;     
-        flex-wrap: wrap;  
+        display: flex;
+        flex-wrap: wrap;
         height: 40px;
         font-size: 0.8rem;
-    } 
-
-
-/* pagina home */
-
-.imagen{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);     
-    
-}
-
-.slide-frutas img{
-    
-    background-image: url("../imagenes/slidefrutas.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;   
-    background-attachment: fixed; 
-    width: 100%; 
-}
-
-.best-deals{
-    padding: 70px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    
-}
-
-.best-deals h3{
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.mujer{
-    width: 100%;
-    max-width: 500px; 
-}
-
-.destacados{
-    width: 100%;    
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3em 1em;
-    justify-items: center;
-}
-
-
-
-.destacados ul li img{
-    width: 80%;
-    max-width: 400px;  
-    
-}
-.productos-fiji-down{
-    justify-content: space-between;
-    grid-column-gap: 10px;
-    text-decoration: none;
-    padding: 5%;
-
-}
-
-.productos-fiji-down ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 3em 1em;
-    
-    
-}
-
-.productos-fiji-down ul li{    
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;      
-       
-}
-
-.productos-fiji-down img{
-    width: 100%;
-    max-width: 1000px;
-}
-
-.productos-fiji-down p{
-    padding-top: 2%;
-    padding-bottom: 8%;
-    font-size: 1rem; 
-      
-}
-
-
-
-/* footer */
-
-.footer-arriba{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);    
-    height: 15rem;
-    	
-}
-
-.footer-arriba h2{
-    grid-column: 4/10;
-    grid-row: 1/1;
-    font-size: 2rem;
-    letter-spacing: 0.1em; 
-}
-
-.footer-arriba img{
-    grid-column: 6/8;
-    grid-row: 2/2;
-    width: 30%;          
-}
-
-.footer-arriba legend{
-    grid-column: 3/11;
-    grid-row: 3/4;
-    align-self: center;
-}
-.newsletter legend{
-    padding-bottom: 2%;
-
-}
-.newsletter{
-    grid-column: 6/8;
-    grid-row: 4/4;
-    align-self: center;
-}
-
-.newsletter-email{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-}
-.button-lateral{
-    background-color: #000000;
-    color: #ffffff; 
-    border: #000000;
-    height: 1.3rem;
-    width: 3rem;   
-   
-} 
-
-.footer{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(5,1fr); 
-    background-color: #F2F5E0;
-    font-size: 0.8rem;
-    text-align: center;
-    padding-top: 1%;    
-    height: 10rem;   
-    align-items: center;
-  
-}
-.redes-sociales{
-    grid-column: 5/7;
-    grid-row: 1/1;  
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    padding-bottom: 1%;             
-}
-.footer-info{
-    grid-column: 2/10;
-    grid-row: 2/3;
-}
-
-.footer-info ul li{      
-    display: inline-block;
-    font-size: 0.8rem;
-    padding-top: 10px;
-    padding-left: 2%;
-}
-
-.footer-contact{
-    grid-column: 5/7;
-    grid-row: 3/4;
-    padding: 2%;    
-}
-.footer-contact p{
-    padding: 5%;
-} 
-.desarrollado{
-    grid-column: 4/8;
-    grid-row: 4/5;
-}
-
-
-/* boton para subir al hacer scroll */
-.ir-arriba-boton{    
-    display: block;       
-    position: fixed;
-    z-index: 1000;
-    right: 25px;
-    bottom: 25px;
-    transition: all .2s;
-    align-self: center; 
-    cursor: pointer;
-}
-.ir-arriba-boton:hover {    
-    transform: scale(1.1);
-}
-.to-top{
-    border-radius: 50%;
-}
-
-
-
-
-/* ==== pagina productos =====*/
-
-
-
-.titulo-articulos h2{
-   
-    font-size: 1.5rem;
-}
-
-.titulo-articulos h3{
-    
-    font-size: 1rem;
-      
-}
-
-.articulos-varios{
-    justify-content: space-between;
-    grid-column-gap: 10px;
-    text-decoration: none;
-    padding: 5%;
-
-}
-
-.articulos-varios ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 3em 1em;
-    
-    
-}
-
-.articulos-varios ul li{    
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;      
-       
-}
-
-.articulos-varios img{
-    width: 100%;
-    max-width: 1000px;
-}
-
-.articulos-varios p{
-    padding-top: 2%;
-    padding-bottom: 8%;
-    font-size: 1rem; 
-    text-align: center;   
-}
-
-
-
-
-
-    
-}
-
-
-
-
-
-@media (min-width: 1200px){
-    .nav-background{
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(1,1fr);
-        height: 4rem;       
-        
     }
-    .nav-background img{
-       
+    /* pagina home */
+    .imagen {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .best-deals {
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .best-deals h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .mujer {
+        width: 100%;
+        max-width: 500px;
+    }
+    .destacados {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em 1em;
+        justify-items: center;
+    }
+    .destacados ul li img {
+        width: 80%;
+        max-width: 400px;
+    }
+    .productos-fiji-down {
+        justify-content: space-between;
+        grid-column-gap: 10px;
+        text-decoration: none;
+        padding: 5%;
+    }
+    .productos-fiji-down ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-gap: 3em 1em;
+    }
+    .productos-fiji-down ul li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .productos-fiji-down img {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .productos-fiji-down p {
+        padding-top: 2%;
+        padding-bottom: 8%;
+        font-size: 1rem;
+    }
+    /* footer */
+    .footer-arriba {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 15rem;
+    }
+    .footer-arriba h2 {
+        grid-column: 4/10;
+        grid-row: 1/1;
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+    }
+    .footer-arriba img {
+        grid-column: 6/8;
+        grid-row: 2/2;
+        width: 30%;
+    }
+    .footer-arriba legend {
+        grid-column: 3/11;
+        grid-row: 3/4;
+        align-self: center;
+    }
+    .newsletter legend {
+        padding-bottom: 2%;
+    }
+    .newsletter {
+        grid-column: 6/8;
+        grid-row: 4/4;
+        align-self: center;
+    }
+    .newsletter-email {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+    }
+    .button-lateral {
+        background-color: #000000;
+        color: #ffffff;
+        border: #000000;
+        height: 1.3rem;
+        width: 3rem;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        background-color: #F2F5E0;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 1%;
+        height: 10rem;
+        align-items: center;
+    }
+    .redes-sociales {
+        grid-column: 5/7;
+        grid-row: 1/1;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding-bottom: 1%;
+    }
+    .footer-info {
+        grid-column: 2/10;
+        grid-row: 2/3;
+    }
+    .footer-info ul li {
+        display: inline-block;
+        font-size: 0.8rem;
+        padding-top: 10px;
+        padding-left: 2%;
+    }
+    .footer-contact {
+        grid-column: 5/7;
+        grid-row: 3/4;
+        padding: 2%;
+    }
+    .footer-contact p {
+        padding: 5%;
+    }
+    .desarrollado {
+        grid-column: 4/8;
+        grid-row: 4/5;
+    }
+    /* boton para subir al hacer scroll */
+    .ir-arriba-boton {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        right: 25px;
+        bottom: 25px;
+        transition: all .2s;
+        align-self: center;
+        cursor: pointer;
+    }
+    .ir-arriba-boton:hover {
+        transform: scale(1.1);
+    }
+    .to-top {
+        border-radius: 50%;
+    }
+    /* ==== pagina productos =====*/
+    .titulo-articulos h2 {
+        font-size: 1.5rem;
+    }
+    .titulo-articulos h3 {
+        font-size: 1rem;
+    }
+    .articulos-varios {
+        justify-content: space-between;
+        grid-column-gap: 10px;
+        text-decoration: none;
+        padding: 5%;
+    }
+    .articulos-varios ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-gap: 3em 1em;
+    }
+    .articulos-varios ul li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .articulos-varios img {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .articulos-varios p {
+        padding-top: 2%;
+        padding-bottom: 8%;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-background {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 4rem;
+    }
+    .nav-background img {
         width: 30%;
         max-width: 200px;
-        
     }
-
-    .links-iconos{
+    .links-iconos {
         grid-row: 1/1;
         grid-column: 12/12;
-    
-     
         justify-content: space-between;
         align-content: center
     }
-    .nav-background a{
+    .nav-background a {
         grid-row: 1/1;
         grid-column: 2/3;
         text-decoration: none;
@@ -850,8 +736,7 @@ form div{
         font-size: 1rem;
         color: #000000;
     }
-    
-    .links-iconos{
+    .links-iconos {
         grid-row: 1/1;
         grid-column: 12/12;
         display: flex;
@@ -859,296 +744,220 @@ form div{
         justify-content: space-between;
         align-content: center
     }
-    
-    .nav-link{
+    .nav-link {
         padding-top: 1%;
         text-decoration: none;
         color: #000000;
         padding-left: 2%;
-        display: flex;     
-        flex-wrap: wrap;  
+        display: flex;
+        flex-wrap: wrap;
         height: 40px;
         font-size: 1rem;
-    } 
-
-
-/* pagina home */
-
-.imagen{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);     
-    
-}
-
-.slide-frutas img{
-    
-    background-image: url("../imagenes/slidefrutas.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;   
-    background-attachment: fixed; 
-    width: 100%; 
-}
-
-.best-deals{    
-    padding-right: 5%;
-        
-}
-
-.best-deals h3{
-    font-size: 2.5rem;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-
-.mujer{
-    width: 100%;
-    max-width: 500px;
-}
-
-
-.destacados{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3em 2em;
-    justify-items: center;
-    padding-top: 5%;
-}
-
-
-.destacados ul li{
-    font-size: 1.2rem;      
-    
-}
-
-.destacados ul li img{
-    width: 90%;
-    max-width: 400px;  
-    
-}
-
-
-
-
-.productos-fiji-down{
-    justify-content: space-between;
-    grid-column-gap: 20px;
-    text-decoration: none;
-    padding: 5%;
-
-}
-
-.productos-fiji-down ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    grid-gap: 3em 2em;
-    
-    
-}
-
-.productos-fiji-down ul li{    
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;      
-       
-}
-
-
-.articulos-varios p{
-    padding-top: 2%;
-    padding-bottom: 8%;
-    font-size: 1.2rem; 
-    text-align: center;   
-}
-
-
-/* footer */
-
-.footer-arriba{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);    
-    height: 15rem;
-    padding:2%;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
-    	
-}
-
-.footer-arriba h2{
-    grid-column: 4/10;
-    grid-row: 1/1;
-    padding-top: 2%;
-    border-top:solid 1px #a1a1a1;
-    padding-bottom: 2%;
-    font-size: 2.5rem;
-    
-}
-
-.footer-arriba img{
-    grid-column: 6/8;
-    grid-row: 2/2;
-    width: 30%;  
-      
-         
-}
-
-.footer-arriba legend{
-    grid-column: 3/11;
-    grid-row: 3/4;    
-    font-size: 1.5rem;
-}
-.newsletter legend{
-    padding-bottom: 2%;    
-
-}
-
-.newsletter-email{
-    padding-top: 8%;
-    padding-bottom: 5%;
-    display: flex;
-    height: 2rem;    
-    
-}
-.button-lateral{
-    background-color: #000000;
-    color: #ffffff; 
-    border: #000000;
-    height: 2rem;
-      
-   
-}
- 
-
-.footer{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(5,1fr); 
-    background-color: #F2F5E0;
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 1%;    
-    height: 20rem;   
-    align-items: center;
-  
-}
-.redes-sociales{
-    grid-column: 5/7;
-    grid-row: 1/1;  
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    padding-bottom: 1%;             
-}
-.footer-info{
-    grid-column: 2/10;
-    grid-row: 2/3;
-}
-
-.footer-info ul li{      
-    display: inline-block;
-    font-size: 1.2rem;
-    padding-top: 10px;
-    padding-left: 2%;
-}
-
-.footer-contact{
-    grid-column: 5/7;
-    grid-row: 3/4;
-    padding: 2%;    
-}
-.footer-contact p{
-    padding: 2%;
-    
-} 
-.desarrollado{
-    grid-column: 4/8;
-    grid-row: 4/5;
-}
-
-
-/* boton para subir al hacer scroll */
-.ir-arriba-boton{    
-    display: block;       
-    position: fixed;
-    z-index: 1000;
-    right: 25px;
-    bottom: 25px;
-    transition: all .2s;
-    align-self: center; 
-    cursor: pointer;
-}
-.ir-arriba-boton:hover {    
-    transform: scale(1.1);
-}
-.to-top{
-    border-radius: 50%;
-}
-
-
-/* ==== pagina productos =====*/
-
-.titulo-articulos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-
-}
-
-.titulo-articulos h2{
-   
-    font-size: 1.8rem;
-}
-
-.titulo-articulos h3{
-    
-    font-size: 1.5rem;
-      
-}
-
-.articulos-varios{
-    justify-content: space-between;
-    grid-column-gap: 20px;
-    text-decoration: none;
-    padding: 5%;
-
-}
-
-.articulos-varios ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    grid-gap: 3em 2em;
-    
-    
-}
-
-.articulos-varios ul li{    
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;      
-       
-}
-
-
-.articulos-varios p{
-    padding-top: 2%;
-    padding-bottom: 8%;
-    font-size: 1.2rem; 
-    text-align: center;   
-}
-
-
-
-    
+    }
+    /* pagina home */
+    .imagen {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .slide-frutas img {
+        background-image: url("../imagenes/slidefrutas.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    .best-deals {
+        padding-right: 5%;
+    }
+    .best-deals h3 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .mujer {
+        width: 100%;
+        max-width: 500px;
+    }
+    .destacados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em 2em;
+        justify-items: center;
+        padding-top: 5%;
+    }
+    .destacados ul li {
+        font-size: 1.2rem;
+    }
+    .destacados ul li img {
+        width: 90%;
+        max-width: 400px;
+    }
+    .productos-fiji-down {
+        justify-content: space-between;
+        grid-column-gap: 20px;
+        text-decoration: none;
+        padding: 5%;
+    }
+    .productos-fiji-down ul {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        justify-items: center;
+        grid-gap: 3em 2em;
+    }
+    .productos-fiji-down ul li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .articulos-varios p {
+        padding-top: 2%;
+        padding-bottom: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    /* footer */
+    .footer-arriba {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 15rem;
+        padding: 2%;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .footer-arriba h2 {
+        grid-column: 4/10;
+        grid-row: 1/1;
+        padding-top: 2%;
+        border-top: solid 1px #a1a1a1;
+        padding-bottom: 2%;
+        font-size: 2.5rem;
+    }
+    .footer-arriba img {
+        grid-column: 6/8;
+        grid-row: 2/2;
+        width: 30%;
+    }
+    .footer-arriba legend {
+        grid-column: 3/11;
+        grid-row: 3/4;
+        font-size: 1.5rem;
+    }
+    .newsletter legend {
+        padding-bottom: 2%;
+    }
+    .newsletter-email {
+        padding-top: 8%;
+        padding-bottom: 5%;
+        display: flex;
+        height: 2rem;
+    }
+    .button-lateral {
+        background-color: #000000;
+        color: #ffffff;
+        border: #000000;
+        height: 2rem;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        background-color: #F2F5E0;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 1%;
+        height: 20rem;
+        align-items: center;
+    }
+    .redes-sociales {
+        grid-column: 5/7;
+        grid-row: 1/1;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        padding-bottom: 1%;
+    }
+    .footer-info {
+        grid-column: 2/10;
+        grid-row: 2/3;
+    }
+    .footer-info ul li {
+        display: inline-block;
+        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-left: 2%;
+    }
+    .footer-contact {
+        grid-column: 5/7;
+        grid-row: 3/4;
+        padding: 2%;
+    }
+    .footer-contact p {
+        padding: 2%;
+    }
+    .desarrollado {
+        grid-column: 4/8;
+        grid-row: 4/5;
+    }
+    /* boton para subir al hacer scroll */
+    .ir-arriba-boton {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        right: 25px;
+        bottom: 25px;
+        transition: all .2s;
+        align-self: center;
+        cursor: pointer;
+    }
+    .ir-arriba-boton:hover {
+        transform: scale(1.1);
+    }
+    .to-top {
+        border-radius: 50%;
+    }
+    /* ==== pagina productos =====*/
+    .titulo-articulos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .titulo-articulos h2 {
+        font-size: 1.8rem;
+    }
+    .titulo-articulos h3 {
+        font-size: 1.5rem;
+    }
+    .articulos-varios {
+        justify-content: space-between;
+        grid-column-gap: 20px;
+        text-decoration: none;
+        padding: 5%;
+    }
+    .articulos-varios ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-gap: 3em 2em;
+    }
+    .articulos-varios ul li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .articulos-varios p {
+        padding-top: 2%;
+        padding-bottom: 8%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
