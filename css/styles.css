@@ -145,27 +145,21 @@
 }
 
 
-
 .productos-fiji-down{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 2rem auto;
     grid-column-gap: 10px;
     text-decoration: none;
     padding: 5%;
-    width: 70%;
+
 }
 
 .productos-fiji-down ul{
-    
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-
+    grid-gap: 3em 1em;
+    
+    
 }
 
 .productos-fiji-down ul li{    
@@ -178,17 +172,17 @@
 
 .productos-fiji-down img{
     width: 100%;
-    max-width: 564px;
-    align-self: center;
-    
+    max-width: 1000px;
 }
 
 .productos-fiji-down p{
     padding-top: 2%;
     padding-bottom: 8%;
-    font-size: 0.8rem;
-    
+    font-size: 0.8rem;    
+    text-align: center;
 }
+
+
 
 /* footer */
 
@@ -592,8 +586,8 @@ form div{
 .destacados{
     width: 100%;    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em 1em;
     justify-items: center;
 }
 
@@ -604,35 +598,44 @@ form div{
     max-width: 400px;  
     
 }
-
-
 .productos-fiji-down{
-    display: flex;  
-    width: 85%;   
-      
+    justify-content: space-between;
+    grid-column-gap: 10px;
+    text-decoration: none;
+    padding: 5%;
+
 }
 
-.productos-fiji-down ul{    
+.productos-fiji-down ul{
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    grid-gap: 3em 1em;
     
- 
     
+}
+
+.productos-fiji-down ul li{    
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;      
+       
 }
 
 .productos-fiji-down img{
-    align-self: center;
-    
+    width: 100%;
+    max-width: 1000px;
 }
 
 .productos-fiji-down p{
     padding-top: 2%;
     padding-bottom: 8%;
-    font-size: 1rem;
-    
+    font-size: 1rem; 
+      
 }
+
+
 
 /* footer */
 
@@ -909,8 +912,8 @@ form div{
 
 .destacados{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em 2em;
     justify-items: center;
     padding-top: 5%;
 }
@@ -930,27 +933,38 @@ form div{
 
 
 
-
 .productos-fiji-down{
-    display: flex;
     justify-content: space-between;
-    align-items: center;  
-    width: 90%;    
+    grid-column-gap: 20px;
     text-decoration: none;
-    
+    padding: 5%;
+
 }
 
 .productos-fiji-down ul{
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-column-gap: 20px;  
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 3em 2em;
+    
     
 }
 
-.productos-fiji-down ul li p{
-    font-size: 1.2rem;
+.productos-fiji-down ul li{    
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;      
+       
 }
 
+
+.articulos-varios p{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    font-size: 1.2rem; 
+    text-align: center;   
+}
 
 
 /* footer */
