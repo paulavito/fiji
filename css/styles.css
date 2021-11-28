@@ -586,7 +586,7 @@ form div{
 .destacados{
     width: 100%;    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3em 1em;
     justify-items: center;
 }
@@ -912,7 +912,7 @@ form div{
 
 .destacados{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3em 2em;
     justify-items: center;
     padding-top: 5%;
