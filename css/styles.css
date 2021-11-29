@@ -369,34 +369,57 @@
 
 /* ==== pagina sonbre nosotros ==== */
 
-.about-us img {
-    height: 50vh;
-    display: block;
-    margin: auto;
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
 }
 
-.about-us h2 {
+.about-us img {
+    width: 100%;
+}
+
+.info-nosotros {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 2%;
 }
 
-.about-us p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2%;
-    padding-right: 2%;
+.info-nosotros h2 {
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+
+.info-nosotros p {
+    font-size: 0.8rem;
+    padding-bottom: 1%;
 }
 
 
 /* ==== pagina info & ayuda ==== */
 
+.info-fiji {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+}
+
 .info-fiji div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    font-size: 0.8rem;
+}
+
+.info-fiji h3 {
     padding: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
+    font-size: 1.2rem;
 }
 
 .info-fiji img {
@@ -701,13 +724,34 @@ form div {
     }
     .articulos-varios img {
         width: 100%;
-        max-width: 1000px;
+        justify-self: center;
     }
     .articulos-varios p {
         padding-top: 2%;
         padding-bottom: 8%;
         font-size: 1rem;
         text-align: center;
+    }
+    /* ==== pagina sonbre nosotros ==== */
+    .info-nosotros h2 {
+        font-size: 1.5rem;
+    }
+    .info-nosotros p {
+        font-size: 1rem;
+    }
+    /* ==== pagina info & ayuda ==== */
+    .info-fiji div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+        font-size: 1rem;
+    }
+    .info-fiji h3 {
+        padding: 2%;
+        font-size: 1.5rem;
     }
 }
 
@@ -959,5 +1003,13 @@ form div {
         padding-bottom: 8%;
         font-size: 1.2rem;
         text-align: center;
+    }
+    /* ==== pagina sonbre nosotros ==== */
+    .info-nosotros h2 {
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+    .info-nosotros p {
+        font-size: 1.5rem;
     }
 }
