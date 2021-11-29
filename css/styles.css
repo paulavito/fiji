@@ -37,6 +37,12 @@
     color: #000000;
 }
 
+.nav-background a:hover {
+    transition: all .2s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .links-iconos {
     grid-row: 1/1;
     grid-column: 12/12;
@@ -45,6 +51,24 @@
     justify-content: space-between;
     align-content: center;
     padding-left: 2%;
+}
+
+.search:hover {
+    transition: all .2s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.bag:hover {
+    transition: all .2s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.user:hover {
+    transition: all .2s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
