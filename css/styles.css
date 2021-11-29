@@ -404,7 +404,8 @@
 .info-fiji {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
+    padding-bottom: 5%;
 }
 
 .info-fiji div {
@@ -413,7 +414,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     font-size: 0.8rem;
 }
 
@@ -438,54 +439,60 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .contacto h2 {
-    font-size: 2rem;
-    padding: 2%;
-    padding-top: 2%;
+    font-size: 1.2rem;
     padding-bottom: 5%;
 }
 
 .contacto p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    padding-bottom: 2%;
 }
 
 .contacto ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
-    padding-top: 3%;
     list-style: none;
 }
 
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 5%;
+}
+
 form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2%;
+    flex-wrap: wrap;
 }
 
 form div {
-    padding: 2%;
+    padding: 5%;
 }
 
 .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 50px;
-    width: 500px;
+    height: 30px;
+    width: 250px;
 }
 
 .enviar input {
     background-color: #000000;
     color: #ffffff;
-    height: 40px;
-    width: 70px;
+    height: 30px;
+    width: 60px;
+    border: #000000;
 }
 
 
@@ -499,7 +506,7 @@ form div {
         height: 4rem;
     }
     .nav-background img {
-        width: 30%;
+        width: 40%;
         max-width: 200px;
     }
     .links-iconos {
@@ -741,17 +748,33 @@ form div {
     }
     /* ==== pagina info & ayuda ==== */
     .info-fiji div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 5%;
         font-size: 1rem;
     }
     .info-fiji h3 {
         padding: 2%;
         font-size: 1.5rem;
+    }
+    /* ==== pagina contacto ==== */
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
+    .contacto p {
+        font-size: 1.2rem;
+    }
+    .contacto ul li {
+        font-size: 1rem;
+        padding: 2%;
+    }
+    form div {
+        padding: 2%;
+    }
+    .box {
+        height: 50px;
+        width: 500px;
+    }
+    .enviar input {
+        height: 50px;
+        width: 90px;
     }
 }
 
@@ -915,7 +938,7 @@ form div {
         font-size: 1.2rem;
         text-align: center;
         padding-top: 1%;
-        height: 20rem;
+        height: 30rem;
         align-items: center;
     }
     .redes-sociales {
@@ -933,7 +956,7 @@ form div {
     .footer-info ul li {
         display: inline-block;
         font-size: 1.2rem;
-        padding-top: 10px;
+        padding-top: 5%;
         padding-left: 2%;
     }
     .footer-contact {
@@ -1006,10 +1029,37 @@ form div {
     }
     /* ==== pagina sonbre nosotros ==== */
     .info-nosotros h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
         padding-top: 5%;
     }
     .info-nosotros p {
         font-size: 1.5rem;
+    }
+    /* ==== pagina info & ayuda ==== */
+    .info-fiji div {
+        font-size: 1rem;
+    }
+    .info-fiji h3 {
+        padding: 2%;
+        font-size: 1.8rem;
+    }
+    /* ==== pagina contacto ==== */
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
+    .contacto p {
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    .contacto ul li {
+        font-size: 1.2rem;
+    }
+    .box {
+        height: 60px;
+        width: 600px;
+    }
+    .enviar input {
+        height: 40px;
+        width: 70px;
     }
 }
