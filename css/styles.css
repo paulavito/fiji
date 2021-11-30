@@ -333,6 +333,26 @@
 }
 
 
+/* animacion mensaje inferior */
+
+.mensaje {
+    overflow: hidden;
+}
+
+div .mensaje-texto {
+    font-size: 0.8rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 0%;
+    position: relative;
+    animation-name: mensaje-text;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+
 /* ==== pagina productos ==== */
 
 .banner-product {
@@ -728,6 +748,10 @@ form div {
     .to-top {
         border-radius: 50%;
     }
+    /* animacion mensaje inferior */
+    div .mensaje-texto {
+        font-size: 1rem;
+    }
     /* ==== pagina productos =====*/
     .titulo-articulos h2 {
         font-size: 1.5rem;
@@ -1012,6 +1036,9 @@ form div {
     .to-top {
         border-radius: 50%;
     }
+    div .mensaje-texto {
+        font-size: 1rem;
+    }
     /* ==== pagina productos =====*/
     .titulo-articulos {
         display: flex;
@@ -1085,5 +1112,17 @@ form div {
     .enviar input {
         height: 40px;
         width: 70px;
+    }
+}
+
+
+/* ====== Animaciones ======== */
+
+@keyframes mensaje-text {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
     }
 }
