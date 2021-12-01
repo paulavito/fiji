@@ -123,7 +123,6 @@
     grid-template-columns: 1fr;
     grid-column-gap: 10px;
     justify-items: center;
-    padding-bottom: 10%;
 }
 
 .mujer {
@@ -153,7 +152,7 @@
 }
 
 .imagen-texto img {
-    background-image: url("../imagenes/pañococinabollotapado.jpg");
+    background-image: url("../imagenes/bannerinferior.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
