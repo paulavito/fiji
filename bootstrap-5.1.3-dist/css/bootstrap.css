@@ -6841,6 +6841,7 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
+    width: 30%;
 }
 
 .offcanvas-header .btn-close {

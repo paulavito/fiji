@@ -10,59 +10,11 @@
 
 .icons-link {
     display: flex;
-    align-self: center;
     justify-content: center;
-}
-
-
-/* .icons-link {
-    display: flex;
-    
-} */
-
-
-/* .nav-background {
-    display: grid;
-    grid-template-rows: 1fr;
-    height: 4rem;
-    align-items: center;
-    background-color: #ffffff;
-    position: sticky;
-    top: 0%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-bottom: solid 1px #e2e2e2;
-}
-
-.nav-background img {
-    grid-row: 1/1;
-    grid-column: 1/2;
-    width: 50%;
-    max-width: 200px;
-}
-
-.nav-background a {
-    grid-row: 1/1;
-    grid-column: 2/3;
-    text-decoration: none;
-    display: inline-block;
-    font-size: rem;
-    color: #000000;
-}
-
-.nav-background a:hover {
-    transition: all .2s;
-    cursor: pointer;
-    transform: scale(1.1);
-} */
-
-
-/* .links-iconos {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
-} */
+    align-items: center;
+}
 
 .search:hover {
     transition: all .2s;
