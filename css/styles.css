@@ -8,7 +8,21 @@
 
 /* navegation bar */
 
-.nav-background {
+.icons-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .icons-link {
+    display: flex;
+    
+} */
+
+
+/* .nav-background {
     display: grid;
     grid-template-rows: 1fr;
     height: 4rem;
@@ -41,17 +55,15 @@
     transition: all .2s;
     cursor: pointer;
     transform: scale(1.1);
-}
+} */
 
-.links-iconos {
-    grid-row: 1/1;
-    grid-column: 12/12;
+
+/* .links-iconos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    padding-left: 2%;
-}
+} */
 
 .search:hover {
     transition: all .2s;
