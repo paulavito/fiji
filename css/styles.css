@@ -10,9 +10,8 @@
 
 .icons-link {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
 }
 
 
@@ -99,21 +98,6 @@
 
 
 /* pagina home */
-
-.imagen {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.slide-frutas img {
-    background-image: url("../imagenes/slidefrutas.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-}
 
 .best-deals {
     display: flex;
