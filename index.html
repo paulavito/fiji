@@ -68,22 +68,27 @@
 
                 <div class="icons-link ">
 
-                    <i class="bi bi-search  justify-content-center"></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
+                    <div class="search">
+                        <i class="bi bi-search  justify-content-center"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </div>
 
-
-                    <i class="bi bi-bag m-2"></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <div class="bag">
+                        <i class="bi bi-bag m-2"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                    </svg>
+                        </svg>
+                    </div>
 
-
-                    <i class="bi bi-person m-2"></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <div class="user">
+                        <i class="bi bi-person m-2"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                    </svg>
+                        </svg>
+                    </div>
+
 
                 </div>
         </nav>
@@ -177,21 +182,75 @@
 
 
 
-    <!-- newsletters -->
-    <section class="footer-arriba">
-        <h2>STAY IN TOUCH</h2>
-        <img src="imagenes/palm-oil-lineal.png" alt="palm-logo">
-        <legend>Suscribite a nuestro newsletters y recibí un regalo de bienvenida!</legend>
-        <form class="newsletter">
-            <section class="newsletter-email">
-                <input type="email" name="email" id="email" placeholder="Email"><input class="button-lateral" type="submit" value="Enviar">
-            </section>
-        </form>
-    </section>
-
     <!--  footer -->
     <footer class="footer">
-        <section class="redes-sociales">
+
+        <!--   <hr class="rgba-white-light" style="margin: 0 15%;"> -->
+
+        <div class="container-fluid text-center ">
+            <h2 class="pt-2">STAY IN TOUCH</h2>
+            <img src="imagenes/palm-oil-lineal.png" alt="palm-logo" width="20">
+
+            <div class="col-auto">
+                <p>
+                    <legend class="small">Suscribite a nuestro newsletters y recibí un regalo de bienvenida!</legend>
+                </p>
+            </div>
+
+            <section class="">
+                <form action="">
+
+                    <div class="col-md-2 col-12">
+
+                        <div class="form-outline mb-4">
+
+                            <input type="email" id="form5Example27" class="form-control" placeholder="Email">
+                            <button type="submit" class="btn btn-dark mb-2"> Enviar
+                                </button>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="container">
+
+            <div class="row small">
+                <div class="col small">
+                    COMO COMPRAR
+                </div>
+                <div class="col small">
+                    FORMA DE ENVIOS
+                </div>
+                <div class="col small">
+                    CAMBIOS Y DEVOLUCIONES
+                </div>
+                <div class="col  small">
+                    PUNTOS DE VENTA
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid text-center p-3">
+            <p class="small">&copy; Desarrollado por <a class="text-decoration-none text-black" href="#">Paula Vito</a> </p>
+
+        </div>
+
+
+
+
+
+
+        <!--     <section class="redes-sociales">
             <i class="fab fa-instagram"></i>
             <i class="fab fa-pinterest"></i>
             <i class="fab fa-facebook-f"></i>
@@ -213,7 +272,7 @@
 
         <section class="desarrollado">
             <p> DESARROLLADO POR <a href="#">Paula Vito</a></p>
-        </section>
+        </section> -->
 
         <!-- icono to top para scroll -->
         <div class="ir-arriba-boton ocultar">

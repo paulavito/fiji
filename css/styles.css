@@ -37,17 +37,6 @@
 
 /* hamburguer menu === pendiente */
 
-.nav-link {
-    padding-top: 3%;
-    text-decoration: none;
-    color: #000000;
-    padding-left: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 30px;
-    font-size: 0.8rem;
-}
-
 
 /* pagina home */
 
@@ -145,6 +134,19 @@
 /* footer */
 
 .footer-arriba {
+    border-top: thin solid #D6D6D6;
+    /*  box-sizing: border-box;
+    clear: both;
+    margin: 2em auto 0;
+    max-width: 96.5em;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: thin solid #D6D6D6;
+    margin-top: 2rem; */
+}
+
+
+/* .footer-arriba {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -255,7 +257,7 @@
 .desarrollado a {
     text-decoration: none;
     color: #000000;
-}
+} */
 
 
 /* boton para subir al hacer scroll */
@@ -595,7 +597,7 @@ form div {
         font-size: 1rem;
     }
     /* footer */
-    .footer-arriba {
+    /* .footer-arriba {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -677,7 +679,7 @@ form div {
     .desarrollado {
         grid-column: 4/8;
         grid-row: 4/5;
-    }
+    } */
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
         display: block;
@@ -883,6 +885,17 @@ form div {
     }
     /* footer */
     .footer-arriba {
+        border-top: thin solid #D6D6D6;
+        /*  box-sizing: border-box;
+        clear: both;
+        margin: 2em auto 0;
+        max-width: 96.5em;
+        text-align: center;
+        padding: 1.5rem;
+        border-top: thin solid #D6D6D6;
+        margin-top: 2rem; */
+    }
+    /* .footer-arriba {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -965,7 +978,7 @@ form div {
     .desarrollado {
         grid-column: 4/8;
         grid-row: 4/5;
-    }
+    } */
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
         display: block;
