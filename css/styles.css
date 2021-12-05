@@ -35,6 +35,19 @@
 }
 
 
+/* animacion mensaje inferior */
+
+.marquesina {
+    background: #000000;
+    color: #ffff;
+    font-size: 0.5rem;
+    height: 12px;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0%;
+}
+
+
 /* hamburguer menu === pendiente */
 
 
@@ -135,129 +148,34 @@
 
 .footer-arriba {
     border-top: thin solid #D6D6D6;
-    /*  box-sizing: border-box;
-    clear: both;
-    margin: 2em auto 0;
-    max-width: 96.5em;
-    text-align: center;
-    padding: 1.5rem;
-    border-top: thin solid #D6D6D6;
-    margin-top: 2rem; */
+    margin: 0 15%;
 }
 
-
-/* .footer-arriba {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 15rem;
-    padding: 2%;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
+.pie {
+    background-image: #F2F5E0;
 }
 
-.footer-arriba h2 {
-    grid-column: 4/10;
-    grid-row: 1/1;
-    padding-top: 5%;
-    border-top: solid 1px #a1a1a1;
-    padding-bottom: 2%;
-    font-size: 1.5rem;
-    align-self: center;
-    letter-spacing: .4em;
-}
-
-.footer-arriba img {
-    grid-column: 6/8;
-    grid-row: 2/2;
-    width: 20%;
-    align-self: center;
-    padding-bottom: 8%;
-    padding-top: 8%;
-}
-
-.footer-arriba legend {
-    grid-column: 4/10;
-    grid-row: 3/4;
-    align-self: center;
-}
-
-.newsletter legend {
-    padding-bottom: 2%;
-}
-
-.newsletter {
-    grid-column: 6/8;
-    grid-row: 4/4;
-    align-self: center;
+.newsletter-info {
+    font-size: 0.8rem;
 }
 
 .newsletter-email {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.button-lateral {
-    background-color: #000000;
-    color: #ffffff;
-    border: #000000;
-    height: 1.3rem;
-    width: 3rem;
-}
-
-.footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #F2F5E0;
-    font-size: 0.8rem;
-    height: 15rem;
-    text-align: center;
-}
-
-.redes-sociales {
-    grid-column: 4/8;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    padding-bottom: 1%;
     padding-top: 2%;
-    align-self: center;
+    padding-bottom: 5%;
+    font-size: 0.8rem;
 }
 
 .footer-info {
-    grid-column: 4/8;
-    grid-row: 2/3;
-}
-
-.footer-info ul li {
-    display: inline-block;
-    font-size: 0.8rem;
-    padding-top: 10px;
-    padding-left: 2%;
+    font-size: 0.5rem;
 }
 
 .footer-contact {
-    grid-column: 5/7;
-    grid-row: 3/4;
-    padding: 4%;
+    font-size: 0.5rem;
 }
 
-.footer-contact p {
-    padding-top: 5%;
-    padding: 1%;
+.footer-inferior {
+    font-size: 0.5rem;
 }
-
-.desarrollado {
-    grid-column: 5/7;
-    grid-row: 4/5;
-}
-
-.desarrollado a {
-    text-decoration: none;
-    color: #000000;
-} */
 
 
 /* boton para subir al hacer scroll */
@@ -279,26 +197,6 @@
 
 .to-top {
     border-radius: 50%;
-}
-
-
-/* animacion mensaje inferior */
-
-.mensaje {
-    overflow: hidden;
-}
-
-div .mensaje-texto {
-    font-size: 0.8rem;
-    background-color: #000000;
-    color: #ffffff;
-    padding-bottom: 0%;
-    position: relative;
-    animation-name: mensaje-text;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
 }
 
 
@@ -492,7 +390,7 @@ form div {
 /* ====== Media Queries ======== */
 
 @media (min-width: 768px) {
-    .nav-background {
+    /* .nav-background {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -533,7 +431,7 @@ form div {
         flex-wrap: wrap;
         height: 40px;
         font-size: 0.8rem;
-    }
+    } */
     /* pagina home */
     .imagen {
         display: grid;
@@ -597,89 +495,10 @@ form div {
         font-size: 1rem;
     }
     /* footer */
-    /* .footer-arriba {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        height: 15rem;
+    .footer-arriba {
+        border-top: thin solid #D6D6D6;
+        margin: 0 15%;
     }
-    .footer-arriba h2 {
-        grid-column: 4/10;
-        grid-row: 1/1;
-        font-size: 2rem;
-        letter-spacing: 0.1em;
-    }
-    .footer-arriba img {
-        grid-column: 6/8;
-        grid-row: 2/2;
-        width: 30%;
-    }
-    .footer-arriba legend {
-        grid-column: 3/11;
-        grid-row: 3/4;
-        align-self: center;
-    }
-    .newsletter legend {
-        padding-bottom: 2%;
-    }
-    .newsletter {
-        grid-column: 6/8;
-        grid-row: 4/4;
-        align-self: center;
-    }
-    .newsletter-email {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        display: flex;
-    }
-    .button-lateral {
-        background-color: #000000;
-        color: #ffffff;
-        border: #000000;
-        height: 1.3rem;
-        width: 3rem;
-    }
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        background-color: #F2F5E0;
-        font-size: 0.8rem;
-        text-align: center;
-        padding-top: 1%;
-        height: 10rem;
-        align-items: center;
-    }
-    .redes-sociales {
-        grid-column: 5/7;
-        grid-row: 1/1;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1rem;
-        padding-bottom: 1%;
-    }
-    .footer-info {
-        grid-column: 2/10;
-        grid-row: 2/3;
-    }
-    .footer-info ul li {
-        display: inline-block;
-        font-size: 0.8rem;
-        padding-top: 10px;
-        padding-left: 2%;
-    }
-    .footer-contact {
-        grid-column: 5/7;
-        grid-row: 3/4;
-        padding: 2%;
-    }
-    .footer-contact p {
-        padding: 5%;
-    }
-    .desarrollado {
-        grid-column: 4/8;
-        grid-row: 4/5;
-    } */
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
         display: block;
@@ -886,99 +705,8 @@ form div {
     /* footer */
     .footer-arriba {
         border-top: thin solid #D6D6D6;
-        /*  box-sizing: border-box;
-        clear: both;
-        margin: 2em auto 0;
-        max-width: 96.5em;
-        text-align: center;
-        padding: 1.5rem;
-        border-top: thin solid #D6D6D6;
-        margin-top: 2rem; */
+        margin: 0 15%;
     }
-    /* .footer-arriba {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        height: 15rem;
-        padding: 2%;
-        text-align: center;
-        justify-items: center;
-        align-content: center;
-    }
-    .footer-arriba h2 {
-        grid-column: 4/10;
-        grid-row: 1/1;
-        padding-top: 2%;
-        border-top: solid 1px #a1a1a1;
-        padding-bottom: 2%;
-        font-size: 2.5rem;
-    }
-    .footer-arriba img {
-        grid-column: 6/8;
-        grid-row: 2/2;
-        width: 30%;
-    }
-    .footer-arriba legend {
-        grid-column: 3/11;
-        grid-row: 3/4;
-        font-size: 1.5rem;
-    }
-    .newsletter legend {
-        padding-bottom: 2%;
-    }
-    .newsletter-email {
-        padding-top: 8%;
-        padding-bottom: 5%;
-        display: flex;
-        height: 2rem;
-    }
-    .button-lateral {
-        background-color: #000000;
-        color: #ffffff;
-        border: #000000;
-        height: 2rem;
-    }
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        background-color: #F2F5E0;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-top: 1%;
-        height: 30rem;
-        align-items: center;
-    }
-    .redes-sociales {
-        grid-column: 5/7;
-        grid-row: 1/1;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.5rem;
-        padding-bottom: 1%;
-    }
-    .footer-info {
-        grid-column: 2/10;
-        grid-row: 2/3;
-    }
-    .footer-info ul li {
-        display: inline-block;
-        font-size: 1.2rem;
-        padding-top: 5%;
-        padding-left: 2%;
-    }
-    .footer-contact {
-        grid-column: 5/7;
-        grid-row: 3/4;
-        padding: 2%;
-    }
-    .footer-contact p {
-        padding: 2%;
-    }
-    .desarrollado {
-        grid-column: 4/8;
-        grid-row: 4/5;
-    } */
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
         display: block;
