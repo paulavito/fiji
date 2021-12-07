@@ -10,51 +10,78 @@
     />
 
     <link rel="shortcut icon" href="../imagenes/palm-oil.png">
+
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+
+    <!-- link css propio -->
+
     <link rel="stylesheet" href="../css/styles.css">
     <title>Sobre nosotros</title>
 </head>
 
+
+
+
 <body>
-    <header class="nav-background">
-        <img src="../imagenes/icon_menu.png" alt="icono-menu">
-        <a href="../index.html">
-            <h1>FiJi</h1>
-        </a>
 
-        <div class="links-iconos">
-            <div class="search">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="bag">
-                <i class="fas fa-shopping-bag"></i>
-            </div>
-            <div class="user">
-                <i class="fas fa-user"></i>
-            </div>
 
-        </div>
+    <header>
+        <nav class="navbar navbar-light bg-white fixed-top">
 
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fiji</h5>
+
+                    </div>
+                    <div class="offcanvas-body text-decoration-none small">
+                        <ul class="nav flex-column text-decoration-none ">
+
+                            <li class="nav-items mb-2"><a class="nav-link text-black " href="../index.html">HOME</a></li>
+                            <li class="nav-items mb-2"><a class="nav-link text-black" href="productos.html">PRODUCT</a></li>
+                            <li class="nav-items mb-2"><a class="nav-link text-black" href="sobre-nosotros.html">ABOUT US</a></li>
+                            <li class="nav-items mb-2"><a class="nav-link text-black" href="info-ayuda.html">INFO</a></li>
+                            <li class="nav-items mb-2"><a class="nav-link text-black" href="contacto.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <a class="navbar-brand " href="#">Fiji</a>
+
+                <div class="icons-link ">
+
+                    <div class="search">
+                        <i class="bi bi-search  justify-content-center"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </div>
+
+                    <div class="bag">
+                        <i class="bi bi-bag m-2"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg>
+                    </div>
+
+                    <div class="user">
+                        <i class="bi bi-person m-2"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        </svg>
+                    </div>
+
+
+                </div>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a class="nav-items"><a class="nav-link" href="../index.html">HOME</a>
-            </li>
-            <li>
-                <a class="nav-items"><a class="nav-link" href="productos.html">PRODUCTOS</a>
-            </li>
-            <li>
-                <a class="nav-items"><a class="nav-link" href="sobre nosotros.html">SOBRE NOSOTROS</a>
-            </li>
-            <li>
-                <a class="nav-items"><a class="nav-link" href="info & ayuda.html">INFO & AYUDA</a>
-            </li>
-            <li>
-                <a class="nav-items"><a class="nav-link" href="contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-
-    </nav>
 
     <main>
         <section class="about-us">
@@ -74,55 +101,86 @@
 
     </main>
 
-    <!-- newsletters -->
+    <!-- footer-arriba  -->
+
     <section class="footer-arriba">
-        <h2>STAY IN TOUCH</h2>
-        <img src="../imagenes/palm-oil-lineal.png" alt="palm-logo">
-        <legend>Suscribite a nuestro newsletters y recibí un regalo de bienvenida!</legend>
-        <form class="newsletter">
-            <section class="newsletter-email">
-                <input type="email" name="email" id="email" placeholder="Email"><input class="button-lateral" type="submit" value="Enviar">
-            </section>
-        </form>
+        <div class="container footerNewsletter text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class=" pt-2">STAY IN TOUCH</h2>
+                    <img src="../imagenes/palm-oil-lineal.png" alt="palm-logo" width="20">
+                    <p class="newsletter-info pt-2">Suscribite a nuestro newsletters y recibí un regalo de bienvenida!</p>
+                </div>
+
+
+                <div class="newsletter-email">
+                    <form>
+                        <section class="newsletter-email justify-content-center ">
+                            <input type="email" name="email" id="email" placeholder="Email"><input class="boton-enviar" type="submit" value="Enviar">
+                        </section>
+                    </form>
+                </div>
+
+            </div>
 
     </section>
 
 
-
-
     <!--  footer -->
-    <footer class="footer">
-        <section class="redes-sociales">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-facebook-f"></i>
-        </section>
-        <section class="footer-info">
-            <ul>
-                <li class="como-comprar">COMO COMPRAR</li>
-                <li class="envios">FORMA DE ENVIOS</li>
-                <li class="cambios">CAMBIOS Y DEVOLUCIONES</li>
-                <li class="ventas">PUNTOS DE VENTA</li>
-            </ul>
-        </section>
+    <footer class="pie">
 
-        <div class="footer-contact">
-            <P class="whatsapp">WhatsApp:54313388946</P>
-            <p class="email">hola@fiji.com.ar</p>
+        <div class="footer-down text-center">
+            <section class="redes-sociales">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-facebook-f"></i>
+            </section>
+
+            <div class="footer-info p-2 ">
+                <div class="row m-0">
+                    <div class="col">
+                        COMO COMPRAR
+                    </div>
+                    <div class="col">
+                        FORMA DE ENVIOS
+                    </div>
+                    <div class="col ">
+                        CAMBIOS Y DEVOLUCIONES
+                    </div>
+                    <div class="col">
+                        PUNTOS DE VENTA
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-contact pt-2 text-center">
+                <P class="whatsapp">WhatsApp:54313388946</P>
+                <p class="email">hola@fiji.com.ar</p>
+            </div>
+
+
+            <div class=" container-fluid text-center">
+                <p class="footer-inferior">&copy; Todos los derechos resevado por <a class="text-decoration-none text-black" href="#">@paulavito </a> </p>
+            </div>
+
+
+            <!-- icono to top para scroll -->
+
+            <div class="ir-arriba-boton ocultar">
+                <img class="to-top" width="40" src="imagenes/icon top.png" alt="to-top">
+            </div>
+
         </div>
-
-
-        <section class="desarrollado">
-            <p> DESARROLLADO POR <a href="#">Paula Vito</a></p>
-        </section>
-
-        <!-- icono to top para scroll -->
-        <div class="ir-arriba-boton ocultar">
-            <img class="to-top" width="80" src="../imagenes/icon top.png" alt="to-top">
-        </div>
-
 
     </footer>
+
+
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+
+
+
+
 </body>
 
 </html>
