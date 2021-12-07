@@ -8,17 +8,13 @@
 
 /* navegation bar */
 
-.navbar .scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-}
-
 .icons-link {
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2%;
 }
 
 .search:hover {
@@ -45,8 +41,8 @@
 .marquesina {
     background: #000000;
     color: #ffff;
-    font-size: 0.5rem;
-    height: 12px;
+    font-size: 0.8rem;
+    height: 20px;
     position: fixed;
     bottom: 0%;
 }
@@ -126,6 +122,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 3em 1em;
+    padding-right: 2rem;
 }
 
 .productos-fiji-down ul li {
@@ -153,6 +150,11 @@
 .footer-arriba {
     border-top: thin solid #D6D6D6;
     margin: 0 15%;
+}
+
+.logo-inferior {
+    width: 10%;
+    max-width: 100%;
 }
 
 .pie {
@@ -186,37 +188,18 @@
 }
 
 .footer-info {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-contact {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .footer-inferior {
-    font-size: 0.5rem;
-}
-
-
-/* boton para subir al hacer scroll */
-
-.ir-arriba-boton {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    right: 25px;
-    bottom: 25px;
-    transition: all .2s;
-    align-self: center;
-    cursor: pointer;
-}
-
-.ir-arriba-boton:hover {
-    transform: scale(1.1);
-}
-
-.to-top {
-    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 2%;
 }
 
 
@@ -410,54 +393,7 @@ form div {
 /* ====== Media Queries ======== */
 
 @media (min-width: 768px) {
-    /* .nav-background {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        height: 4rem;
-    }
-    .nav-background img {
-        width: 40%;
-        max-width: 200px;
-    }
-    .links-iconos {
-        grid-row: 1/1;
-        grid-column: 12/12;
-        justify-content: space-between;
-        align-content: center
-    }
-    .nav-background a {
-        grid-row: 1/1;
-        grid-column: 2/3;
-        text-decoration: none;
-        display: inline-block;
-        font-size: rem;
-        color: #000000;
-    }
-    .links-iconos {
-        grid-row: 1/1;
-        grid-column: 12/12;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center
-    }
-    .nav-link {
-        padding-top: 1%;
-        text-decoration: none;
-        color: #000000;
-        padding-left: 2%;
-        display: flex;
-        flex-wrap: wrap;
-        height: 40px;
-        font-size: 0.8rem;
-    } */
     /* pagina home */
-    .imagen {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-    }
     .best-deals {
         padding: 70px;
         display: flex;
@@ -519,13 +455,54 @@ form div {
         border-top: thin solid #D6D6D6;
         margin: 0 15%;
     }
+    .logo-inferior {
+        width: 6%;
+        max-width: 100%;
+    }
+    .pie {
+        background-color: #F2F5E0;
+    }
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        align-self: center;
+    }
+    .newsletter-info {
+        font-size: 0.8rem;
+    }
+    .newsletter-email {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 0.8rem;
+    }
+    .boton-enviar {
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+    .footer-info {
+        font-size: 0.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-contact {
+        font-size: 0.8rem;
+    }
+    .footer-inferior {
+        font-size: 0.8rem;
+        padding: 2%;
+    }
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
         display: block;
         position: fixed;
         z-index: 1000;
-        right: 25px;
-        bottom: 25px;
+        right: 20px;
+        bottom: 20px;
         transition: all .2s;
         align-self: center;
         cursor: pointer;
@@ -614,63 +591,8 @@ form div {
     }
 }
 
-@media (min-width: 1200px) {
-    .nav-background {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        height: 4rem;
-    }
-    .nav-background img {
-        width: 30%;
-        max-width: 200px;
-    }
-    .links-iconos {
-        grid-row: 1/1;
-        grid-column: 12/12;
-        justify-content: space-between;
-        align-content: center
-    }
-    .nav-background a {
-        grid-row: 1/1;
-        grid-column: 2/3;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1rem;
-        color: #000000;
-    }
-    .links-iconos {
-        grid-row: 1/1;
-        grid-column: 12/12;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center
-    }
-    .nav-link {
-        padding-top: 1%;
-        text-decoration: none;
-        color: #000000;
-        padding-left: 2%;
-        display: flex;
-        flex-wrap: wrap;
-        height: 40px;
-        font-size: 1rem;
-    }
+@media (min-width: 1440px) {
     /* pagina home */
-    .imagen {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-    }
-    .slide-frutas img {
-        background-image: url("../imagenes/slidefrutas.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        width: 100%;
-    }
     .best-deals {
         padding-right: 5%;
     }
@@ -723,9 +645,37 @@ form div {
         text-align: center;
     }
     /* footer */
-    .footer-arriba {
-        border-top: thin solid #D6D6D6;
-        margin: 0 15%;
+    .logo-inferior {
+        width: 4%;
+        max-width: 100%
+    }
+    .redes-sociales {
+        font-size: 1rem;
+    }
+    .newsletter-info {
+        font-size: 1.2rem;
+    }
+    .newsletter-email {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1rem;
+    }
+    .boton-enviar {
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+    .footer-info {
+        font-size: 0.9rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-contact {
+        font-size: 0.9rem;
+    }
+    .footer-inferior {
+        font-size: 0.8rem;
+        padding: 2%;
     }
     /* boton para subir al hacer scroll */
     .ir-arriba-boton {
@@ -823,14 +773,49 @@ form div {
     }
 }
 
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px
+}
 
-/* ====== Animaciones ======== */
+a#scroll {
+    box-shadow: 0 3px 15px 0 rgb(0 0 0 / 25%);
+}
 
-@keyframes mensaje-text {
-    from {
-        right: -100%;
-    }
-    to {
-        right: 100%;
-    }
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #000000;
+}
+
+#scroll:hover {
+    transform: scale(1.1);
+}
+
+
+/* animacion mensaje inferior */
+
+.marquesina {
+    background: #000000;
+    color: #ffff;
+    font-size: 1rem;
+    height: 25px;
+    position: fixed;
+    bottom: 0%;
 }
