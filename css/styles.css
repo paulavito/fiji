@@ -663,9 +663,6 @@ form div {
         font-size: 1rem;
     }
     /* ==== pagina productos =====*/
-    .filtro h3 {
-        font-size: 0.5rem;
-    }
     .articulos-varios {
         justify-content: space-between;
         grid-column-gap: 20px;
