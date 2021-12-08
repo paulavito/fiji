@@ -98,7 +98,8 @@
     max-width: 400px;
 }
 
-.productos-fiji-down {
+
+/* .productos-fiji-down {
     justify-content: space-between;
     grid-column-gap: 10px;
     text-decoration: none;
@@ -131,6 +132,8 @@
     font-size: 0.8rem;
     text-align: center;
 }
+
+ */
 
 
 /* footer */
@@ -198,38 +201,6 @@
     font-size: 1rem;
     padding-bottom: 2%;
     align-self: center;
-}
-
-.articulos-varios {
-    justify-content: space-between;
-    grid-column-gap: 10px;
-    text-decoration: none;
-    padding: 5%;
-}
-
-.articulos-varios ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    grid-gap: 3em 1em;
-}
-
-.articulos-varios ul li {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.articulos-varios img {
-    width: 100%;
-    max-width: 1000px;
-}
-
-.articulos-varios p {
-    padding-top: 2%;
-    padding-bottom: 8%;
-    font-size: 0.8rem;
 }
 
 
@@ -395,7 +366,7 @@ form div {
         width: 80%;
         max-width: 400px;
     }
-    .productos-fiji-down {
+    /* .productos-fiji-down {
         justify-content: space-between;
         grid-column-gap: 10px;
         text-decoration: none;
@@ -421,7 +392,7 @@ form div {
         padding-top: 2%;
         padding-bottom: 8%;
         font-size: 1rem;
-    }
+    } */
     /* footer */
     .footer-arriba {
         border-top: thin solid #D6D6D6;
@@ -499,35 +470,6 @@ form div {
         font-size: 1rem;
         align-self: center;
     }
-    .articulos-varios {
-        justify-content: space-between;
-        grid-column-gap: 10px;
-        text-decoration: none;
-        padding: 5%;
-    }
-    .articulos-varios ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        grid-gap: 3em 1em;
-        padding-right: 2%;
-    }
-    .articulos-varios ul li {
-        padding: 0;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .articulos-varios img {
-        width: 100%;
-        justify-self: center;
-    }
-    .articulos-varios p {
-        padding-top: 2%;
-        padding-bottom: 8%;
-        font-size: 1rem;
-        text-align: center;
-    }
     /* ==== pagina sonbre nosotros ==== */
     .info-nosotros h2 {
         font-size: 1.5rem;
@@ -596,7 +538,7 @@ form div {
         width: 90%;
         max-width: 400px;
     }
-    .productos-fiji-down {
+    /* .productos-fiji-down {
         justify-content: space-between;
         grid-column-gap: 20px;
         text-decoration: none;
@@ -620,7 +562,7 @@ form div {
         padding-bottom: 8%;
         font-size: 1.2rem;
         text-align: center;
-    }
+    } */
     /* footer */
     .logo-inferior {
         width: 4%;
@@ -676,34 +618,13 @@ form div {
     }
     /* ==== pagina productos =====*/
     .productos-pag {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .filtrar {
-        font-size: 1.5rem;
-    }
-    .articulos-varios {
-        justify-content: space-between;
-        grid-column-gap: 20px;
-        text-decoration: none;
-        padding: 5%;
-    }
-    .articulos-varios ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        grid-gap: 3em 2em;
-    }
-    .articulos-varios ul li {
-        padding: 0;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .articulos-varios p {
-        padding-top: 2%;
-        padding-bottom: 8%;
         font-size: 1.2rem;
-        text-align: center;
+    }
+    .productos-varios {
+        border: none;
     }
     /* ==== pagina sonbre nosotros ==== */
     .info-nosotros h2 {
