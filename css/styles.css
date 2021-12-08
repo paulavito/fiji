@@ -219,24 +219,15 @@
     justify-content: center;
     text-align: center;
     padding: 2%;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
-.contacto h2 {
-    font-size: 1.2rem;
-    padding-bottom: 5%;
+.contactanos h2 {
+    padding-top: 5%;
+    font-size: 1rem;
 }
 
 .contacto p {
-    font-size: 0.9rem;
-    padding-bottom: 2%;
-}
-
-.contacto ul li {
-    font-size: 0.9rem;
-    text-decoration: none;
-    list-style: none;
+    font-size: 0.8rem;
 }
 
 .formulario {
@@ -406,14 +397,10 @@ form div {
     }
     /* ==== pagina contacto ==== */
     .contacto h2 {
-        font-size: 1.8rem;
-    }
-    .contacto p {
         font-size: 1.2rem;
     }
-    .contacto ul li {
-        font-size: 1rem;
-        padding: 2%;
+    .contacto p {
+        font-size: 0.9rem;
     }
     form div {
         padding: 2%;
@@ -539,14 +526,10 @@ form div {
     }
     /* ==== pagina contacto ==== */
     .contacto h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .contacto p {
-        font-size: 1.2rem;
-        padding-bottom: 2%;
-    }
-    .contacto ul li {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .box {
         height: 60px;
@@ -557,6 +540,9 @@ form div {
         width: 70px;
     }
 }
+
+
+/* === scroll to-top ===*/
 
 #scroll {
     position: fixed;
