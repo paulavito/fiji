@@ -48,9 +48,6 @@
 }
 
 
-/* hamburguer menu === pendiente */
-
-
 /* pagina home */
 
 .best-deals {
@@ -99,15 +96,6 @@
 .destacados ul li img {
     width: 80%;
     max-width: 400px;
-}
-
-.imagen-texto img {
-    background-image: url("../imagenes/bannerinferior.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    background-attachment: fixed;
 }
 
 .productos-fiji-down {
@@ -198,6 +186,19 @@
 
 
 /* ==== pagina productos ==== */
+
+.pagina-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    letter-spacing: .1em;
+}
+
+.productos-pag {
+    font-size: 1rem;
+    padding-bottom: 2%;
+    align-self: center;
+}
 
 .articulos-varios {
     justify-content: space-between;
@@ -489,6 +490,15 @@ form div {
         font-size: 1rem;
     }
     /* ==== pagina productos =====*/
+    .pagina-productos {
+        display: flex;
+        flex-direction: row;
+        letter-spacing: .1em;
+    }
+    .productos-pag {
+        font-size: 1rem;
+        align-self: center;
+    }
     .articulos-varios {
         justify-content: space-between;
         grid-column-gap: 10px;
@@ -500,6 +510,7 @@ form div {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         grid-gap: 3em 1em;
+        padding-right: 2%;
     }
     .articulos-varios ul li {
         padding: 0;
@@ -596,6 +607,7 @@ form div {
         grid-template-columns: repeat (4, 1fr);
         justify-items: center;
         grid-gap: 3em 2em;
+        padding-right: 2%;
     }
     .productos-fiji-down ul li {
         padding: 0;
@@ -663,6 +675,12 @@ form div {
         font-size: 1rem;
     }
     /* ==== pagina productos =====*/
+    .productos-pag {
+        font-size: 1.5rem;
+    }
+    .filtrar {
+        font-size: 1.5rem;
+    }
     .articulos-varios {
         justify-content: space-between;
         grid-column-gap: 20px;
