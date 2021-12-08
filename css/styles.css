@@ -195,35 +195,20 @@
 
 /* ==== pagina info & ayuda ==== */
 
-.info-fiji {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    padding-bottom: 5%;
-}
-
 .info-fiji div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2%;
+    padding-top: 6%;
+    padding-bottom: 3%;
     font-size: 0.8rem;
 }
 
 .info-fiji h3 {
     padding: 2%;
     font-size: 1.2rem;
-}
-
-.info-fiji img {
-    background-image: url("../imagenes/info-envio.jpg ");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    max-width: 1200px;
 }
 
 
@@ -410,6 +395,10 @@ form div {
     /* ==== pagina info & ayuda ==== */
     .info-fiji div {
         font-size: 1rem;
+        padding-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 3%;
     }
     .info-fiji h3 {
         padding: 2%;
@@ -542,6 +531,7 @@ form div {
     /* ==== pagina info & ayuda ==== */
     .info-fiji div {
         font-size: 1rem;
+        padding: 2%;
     }
     .info-fiji h3 {
         padding: 2%;
