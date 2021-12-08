@@ -173,16 +173,6 @@
 
 /* ==== pagina sonbre nosotros ==== */
 
-.about-us {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-}
-
-.about-us img {
-    width: 100%;
-}
-
 .info-nosotros {
     display: flex;
     flex-direction: column;
@@ -194,7 +184,7 @@
 
 .info-nosotros h2 {
     font-size: 1.2rem;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .info-nosotros p {
