@@ -162,13 +162,7 @@
 }
 
 .redes-sociales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     font-size: 0.8rem;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    align-self: center;
 }
 
 .newsletter-info {
@@ -204,29 +198,6 @@
 
 
 /* ==== pagina productos ==== */
-
-.banner-product {
-    background-image: url("../imagenes/slidemate.jpg ");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-}
-
-.titulo-articulos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4%;
-}
-
-.titulo-articulos h2 {
-    font-size: 1.2rem;
-}
-
-.titulo-articulos h3 {
-    font-size: 0.8rem;
-}
 
 .articulos-varios {
     justify-content: space-between;
@@ -518,12 +489,6 @@ form div {
         font-size: 1rem;
     }
     /* ==== pagina productos =====*/
-    .titulo-articulos h2 {
-        font-size: 1.5rem;
-    }
-    .titulo-articulos h3 {
-        font-size: 1rem;
-    }
     .articulos-varios {
         justify-content: space-between;
         grid-column-gap: 10px;
@@ -698,19 +663,8 @@ form div {
         font-size: 1rem;
     }
     /* ==== pagina productos =====*/
-    .titulo-articulos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .titulo-articulos h2 {
-        font-size: 1.8rem;
-    }
-    .titulo-articulos h3 {
-        font-size: 1.5rem;
+    .filtro h3 {
+        font-size: 0.5rem;
     }
     .articulos-varios {
         justify-content: space-between;
@@ -775,7 +729,7 @@ form div {
 
 #scroll {
     position: fixed;
-    right: 10px;
+    right: 20px;
     bottom: 50px;
     cursor: pointer;
     width: 45px;
