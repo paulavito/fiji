@@ -202,11 +202,10 @@
     <script type='text/javascript'>
         $(document).ready(function() {
             $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                    $('#scroll').fadeIn();
-                } else {
-                    $('#scroll').fadeOut();
-                }
+                showScroll();
+            });
+            $(window).resize(function() {
+                showScroll();
             });
             $('#scroll').click(function() {
                 $("html, body").animate({
@@ -215,6 +214,14 @@
                 return false;
             });
         });
+
+        function showScroll() {
+            if ($(this).scrollTop() > 100 && $(this).width() > 500) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+        }
     </script>
 
 
