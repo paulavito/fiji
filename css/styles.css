@@ -62,6 +62,10 @@
     text-align: center;
     padding-top: 4%;
     padding-bottom: 2%;
+    animation-name: entrada;
+    animation-duration: 4s;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
 }
 
 .destacados {
@@ -265,6 +269,10 @@ form div {
     border: #000000;
 }
 
+.click:hover {
+    -webkit-animation: 0.7s click 1;
+}
+
 
 /* ====== Media Queries ======== */
 
@@ -283,6 +291,10 @@ form div {
         text-align: center;
         padding-top: 2%;
         padding-bottom: 2%;
+        animation-name: entrada;
+        animation-duration: 4s;
+        animation-delay: .8s;
+        animation-iteration-count: 1;
     }
     .mujer {
         width: 100%;
@@ -413,10 +425,19 @@ form div {
         height: 50px;
         width: 90px;
     }
+    .click:hover {
+        -webkit-animation: 0.7s click 1;
+    }
 }
 
 @media (min-width: 1440px) {
     /* pagina home */
+    .menu-hamburguesa {
+        font-size: 1.8em;
+    }
+    .titulo-fiji {
+        font-size: 2em;
+    }
     .best-deals {
         padding-right: 5%;
     }
@@ -425,6 +446,10 @@ form div {
         text-align: center;
         padding-top: 2%;
         padding-bottom: 2%;
+        animation-name: entrada;
+        animation-duration: 4s;
+        animation-delay: .8s;
+        animation-iteration-count: 1;
     }
     .mujer {
         width: 100%;
@@ -539,6 +564,9 @@ form div {
         height: 40px;
         width: 70px;
     }
+    .click:hover {
+        -webkit-animation: 0.7s click 1;
+    }
 }
 
 
@@ -581,6 +609,27 @@ a#scroll {
 
 
 /* animacion mensaje inferior */
+
+@keyframes entrada {
+    0% {
+        transform: scale(0);
+        /* transform: translate(-100vw); */
+    }
+    100% {
+        transform: scale(1);
+        /* transform: translate(0vw); */
+    }
+}
+
+@-webkit-keyframes click {
+    25%,
+    75% {
+        -webkit-transform: scale(0.8);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+}
 
 .marquesina {
     background: #000000;
