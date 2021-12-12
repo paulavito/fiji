@@ -106,6 +106,10 @@
     margin-bottom: 4%;
 }
 
+.banner {
+    content: url(../imagenes/fiji-banner-mobile-320px.jpg);
+}
+
 
 /* footer */
 
@@ -276,6 +280,24 @@ form div {
 
 /* ====== Media Queries ======== */
 
+@media (min-width: 321px) {
+    .banner {
+        content: url(../imagenes/fiji-banner-mobile-500px.jpg);
+    }
+}
+
+@media (min-width: 500px) {
+    .banner {
+        content: url(../imagenes/fiji-banner-720.jpg);
+    }
+}
+
+@media (min-width: 720px) {
+    .banner {
+        content: url(../imagenes/banner-inferior-modulo.jpg);
+    }
+}
+
 @media (min-width: 768px) {
     /* pagina home */
     .best-deals {
@@ -310,6 +332,9 @@ form div {
     .destacados ul li img {
         width: 80%;
         max-width: 400px;
+    }
+    .banner {
+        content: url(../imagenes/banner-inferior-modulo.jpg);
     }
     /* footer */
     .footer-arriba {
@@ -468,6 +493,9 @@ form div {
     .destacados ul li img {
         width: 90%;
         max-width: 400px;
+    }
+    .banner {
+        content: url(../imagenes/banner-inferior-modulo.jpg);
     }
     /* footer */
     .logo-inferior {
