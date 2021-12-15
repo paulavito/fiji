@@ -26,7 +26,7 @@
             width: 90%;
             max-width: 500px;
         }
-        .ul {
+        ul {
             padding: 0;
             display: flex;
             align-items: center;
@@ -60,9 +60,6 @@
 
 .banner-inferior {
     margin-bottom: 4%;
-    .banner-1 {
-        content: url(../imagenes/fiji-banner-mobile-320px.jpg);
-    }
 }
 
 
@@ -166,4 +163,10 @@
     height: 30px;
     width: 60px;
     border: #000000;
+}
+
+.click {
+    &:hover {
+        animation: 0.7s click 1;
+    }
 }
