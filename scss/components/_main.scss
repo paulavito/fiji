@@ -163,10 +163,9 @@
     height: 30px;
     width: 60px;
     border: #000000;
-}
-
-.click {
-    &:hover {
-        animation: 0.7s click 1;
+    .click {
+        &:hover {
+            animation: 0.7s click 1;
+        }
     }
 }

@@ -293,8 +293,15 @@
                     height: 60px;
                     width: 600px;
                 }
-                .enviar input {
-                    height: 40px;
-                    width: 70px;
+                .enviar {
+                    .enviar input {
+                        height: 40px;
+                        width: 70px;
+                        .click {
+                            &:hover {
+                                animation: 0.7s click 1;
+                            }
+                        }
+                    }
                 }
             }
