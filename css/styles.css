@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 * {
     margin: 0%;
     padding: 0%;
     font-family: 'Sen', sans-serif;
 }
-
-
-/* navegation bar */
 
 .icons-link {
     display: flex;
@@ -17,22 +14,77 @@
     padding-right: 2%;
 }
 
-.search:hover {
+.icons-link .search:hover {
     transition: all .2s;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.bag:hover {
+.icons-link .bag:hover {
     transition: all .2s;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.user:hover {
+.icons-link .user:hover {
     transition: all .2s;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+/* ==== pagina home ==== */
+
+.best-deals {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.best-deals .name {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    animation-name: entrada;
+    animation-duration: 4s;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+}
+
+.best-deals .destacados {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+
+.best-deals .destacados .mujer {
+    align-self: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.best-deals .destacados .ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.best-deals .destacados .ul li {
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;
+    flex-basis: 50%;
+    padding-bottom: 3%;
+}
+
+.best-deals .destacados .ul li img {
+    width: 80%;
+    max-width: 400px;
 }
 
 
@@ -47,123 +99,12 @@
     bottom: 0%;
 }
 
-
-/* pagina home */
-
-.best-deals {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.best-deals h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 4%;
-    padding-bottom: 2%;
-    animation-name: entrada;
-    animation-duration: 4s;
-    animation-delay: .8s;
-    animation-iteration-count: 1;
-}
-
-.destacados {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-    justify-items: center;
-}
-
-.mujer {
-    align-self: center;
-    width: 90%;
-    max-width: 500px;
-}
-
-.destacados ul {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.destacados ul li {
-    padding-top: 4%;
-    list-style-type: none;
-    text-align: center;
-    flex-basis: 50%;
-    padding-bottom: 3%;
-}
-
-.destacados ul li img {
-    width: 80%;
-    max-width: 400px;
-}
-
 .banner-inferior {
     margin-bottom: 4%;
 }
 
-.banner {
-    content: url(../imagenes/fiji-banner-mobile-320px.jpg);
-}
 
-
-/* footer */
-
-.footer-arriba {
-    border-top: thin solid #D6D6D6;
-    margin: 0 15%;
-}
-
-.logo-inferior {
-    width: 10%;
-    max-width: 100%;
-}
-
-.pie {
-    background-color: #F2F5E0;
-}
-
-.redes-sociales {
-    font-size: 0.8rem;
-}
-
-.newsletter-info {
-    font-size: 0.8rem;
-}
-
-.newsletter-email {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 0.8rem;
-}
-
-.boton-enviar {
-    background-color: black;
-    color: white;
-    border-color: black;
-}
-
-.footer-info {
-    font-size: 0.6rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-contact {
-    font-size: 0.8rem;
-}
-
-.footer-inferior {
-    font-size: 0.8rem;
-    padding: 2%;
-}
-
-
-/* ==== pagina productos ==== */
+/* ==== pagina product ==== */
 
 .pagina-productos {
     display: flex;
@@ -172,14 +113,14 @@
     letter-spacing: .1em;
 }
 
-.productos-pag {
+.pagina-productos .productos-pag {
     font-size: 1rem;
     padding-bottom: 2%;
     align-self: center;
 }
 
 
-/* ==== pagina sonbre nosotros ==== */
+/* ==== pagina about us ==== */
 
 .info-nosotros {
     display: flex;
@@ -201,7 +142,7 @@
 }
 
 
-/* ==== pagina info & ayuda ==== */
+/* ==== pagina info ==== */
 
 .info-fiji div {
     display: flex;
@@ -214,13 +155,13 @@
     font-size: 0.8rem;
 }
 
-.info-fiji h3 {
+.info-fiji div h3 {
     padding: 2%;
     font-size: 1.2rem;
 }
 
 
-/* ==== pagina contacto ==== */
+/* ==== pagina contact ==== */
 
 .contacto {
     display: flex;
@@ -229,7 +170,7 @@
     padding: 2%;
 }
 
-.contactanos h2 {
+.contacto h2 {
     padding-top: 5%;
     font-size: 1rem;
 }
@@ -244,7 +185,7 @@
     padding-bottom: 5%;
 }
 
-form {
+.formulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,7 +194,7 @@ form {
     flex-wrap: wrap;
 }
 
-form div {
+.formulario form div {
     padding: 5%;
 }
 
@@ -273,42 +214,68 @@ form div {
     border: #000000;
 }
 
-.click:hover {
-    -webkit-animation: 0.7s click 1;
+
+/* footer */
+
+.footer-arriba {
+    border-top: thin solid #D6D6D6;
+    margin: 0 15%;
+}
+
+.footer-arriba .logo-inferior {
+    width: 10%;
+    max-width: 100%;
+}
+
+.footer-arriba .newsletter-info {
+    font-size: 0.8rem;
+}
+
+.footer-arriba .newsletter-email {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 0.8rem;
+}
+
+.footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.pie {
+    background-color: #F2F5E0;
+}
+
+.pie .footer-down .redes-sociales {
+    font-size: 0.8rem;
+}
+
+.pie .footer-info {
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie .footer-contact {
+    font-size: 0.8rem;
+}
+
+.pie .container-fluid .footer-inferior {
+    font-size: 0.8rem;
+    padding: 2%;
 }
 
 
 /* ====== Media Queries ======== */
 
-@media (min-width: 321px) {
-    .banner {
-        content: url(../imagenes/fiji-banner-mobile-500px.jpg);
-    }
-}
-
-@media (min-width: 500px) {
-    .banner {
-        content: url(../imagenes/fiji-banner-720.jpg);
-    }
-}
-
-@media (min-width: 720px) {
-    .banner {
-        content: url(../imagenes/banner-inferior-modulo.jpg);
-    }
-}
-
 @media (min-width: 768px) {
     /* pagina home */
     .best-deals {
         padding: 70px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
         align-self: center;
     }
-    .best-deals h3 {
+    .best-deals .name {
         font-size: 1.5rem;
         text-align: center;
         padding-top: 2%;
@@ -318,37 +285,30 @@ form div {
         animation-delay: .8s;
         animation-iteration-count: 1;
     }
-    .mujer {
-        width: 100%;
-        max-width: 500px;
-    }
-    .destacados {
+    .best-deals .destacados {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3em 1em;
         justify-items: center;
     }
-    .destacados ul li img {
+    .best-deals .destacados .mujer {
+        width: 100%;
+        max-width: 500px;
+    }
+    .best-deals .destacados .destacados ul li img {
         width: 80%;
         max-width: 400px;
     }
-    .banner {
-        content: url(../imagenes/banner-inferior-modulo.jpg);
-    }
     /* footer */
-    .footer-arriba {
-        border-top: thin solid #D6D6D6;
-        margin: 0 15%;
-    }
-    .logo-inferior {
+    .footer-arriba .logo-inferior {
         width: 6%;
         max-width: 100%;
     }
-    .pie {
-        background-color: #F2F5E0;
+    .footer-arriba .newsletter-email {
+        padding-bottom: 2%;
     }
-    .redes-sociales {
+    .pie .redes-sociales {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -357,70 +317,31 @@ form div {
         padding-top: 2%;
         align-self: center;
     }
-    .newsletter-info {
-        font-size: 0.8rem;
-    }
-    .newsletter-email {
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-size: 0.8rem;
-    }
-    .boton-enviar {
-        background-color: black;
-        color: white;
-        border-color: black;
-    }
-    .footer-info {
-        font-size: 0.6rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-contact {
-        font-size: 0.8rem;
-    }
-    .footer-inferior {
-        font-size: 0.8rem;
-        padding: 2%;
-    }
-    /* boton para subir al hacer scroll */
-    .ir-arriba-boton {
-        display: block;
-        position: fixed;
-        z-index: 1000;
-        right: 20px;
-        bottom: 20px;
-        transition: all .2s;
-        align-self: center;
-        cursor: pointer;
-    }
-    .ir-arriba-boton:hover {
-        transform: scale(1.1);
-    }
-    .to-top {
-        border-radius: 50%;
-    }
     /* animacion mensaje inferior */
     div .mensaje-texto {
         font-size: 1rem;
     }
-    /* ==== pagina productos =====*/
+    /* ==== pagina product ==== */
     .pagina-productos {
         display: flex;
         flex-direction: row;
         letter-spacing: .1em;
     }
-    .productos-pag {
+    .pagina-productos .productos-pag {
         font-size: 1rem;
         align-self: center;
     }
-    /* ==== pagina sonbre nosotros ==== */
+    /* ==== pagina about us ==== */
+    .container .row .container-imagen {
+        margin-top: 8;
+    }
     .info-nosotros h2 {
         font-size: 1.5rem;
     }
     .info-nosotros p {
         font-size: 1rem;
     }
-    /* ==== pagina info & ayuda ==== */
+    /* ==== pagina info ==== */
     .info-fiji div {
         font-size: 1rem;
         padding-top: 3%;
@@ -428,18 +349,17 @@ form div {
         padding-right: 2%;
         padding-bottom: 3%;
     }
-    .info-fiji h3 {
-        padding: 2%;
+    .info-fiji div h3 {
         font-size: 1.5rem;
     }
-    /* ==== pagina contacto ==== */
+    /* ==== pagina contact ==== */
     .contacto h2 {
         font-size: 1.2rem;
     }
     .contacto p {
         font-size: 0.9rem;
     }
-    form div {
+    .formulario form div {
         padding: 2%;
     }
     .box {
@@ -450,24 +370,53 @@ form div {
         height: 50px;
         width: 90px;
     }
-    .click:hover {
-        -webkit-animation: 0.7s click 1;
+    /* === scroll to-top ===*/
+    #scroll {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        background-color: #ffffff;
+        text-indent: -9999px;
+        display: none;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        border-radius: 60px;
+    }
+    a#scroll {
+        box-shadow: 0 3px 15px 0 #a3a3a3;
+    }
+    #scroll span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -12px;
+        height: 0;
+        width: 0;
+        border: 8px solid transparent;
+        border-bottom-color: #000000;
+    }
+    #scroll:hover {
+        transform: scale(1.1);
     }
 }
 
 @media (min-width: 1440px) {
-    /* pagina home */
-    .menu-hamburguesa {
+    .header-navbar .content .menu-hamburguesa {
         font-size: 1.8em;
     }
-    .titulo-fiji {
+    .header-navbar .content .titulo-fiji {
         font-size: 2em;
     }
+    /* pagina home */
     .best-deals {
         padding-right: 5%;
     }
-    .best-deals h3 {
-        font-size: 2.5rem;
+    .best-deals .name {
+        font-size: 2rem;
         text-align: center;
         padding-top: 2%;
         padding-bottom: 2%;
@@ -476,108 +425,73 @@ form div {
         animation-delay: .8s;
         animation-iteration-count: 1;
     }
-    .mujer {
+    .best-deals .destacados {
         width: 100%;
-        max-width: 500px;
-    }
-    .destacados {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em 2em;
+        grid-gap: 3em 1em;
         justify-items: center;
-        padding-top: 5%;
     }
-    .destacados ul li {
+    .best-deals .destacados li {
         font-size: 1.2rem;
     }
-    .destacados ul li img {
+    .best-deals .destacados li img {
         width: 90%;
         max-width: 400px;
     }
-    .banner {
-        content: url(../imagenes/banner-inferior-modulo.jpg);
-    }
     /* footer */
-    .logo-inferior {
+    .footer-arriba .logo-inferior {
         width: 4%;
-        max-width: 100%
+        max-width: 100%;
     }
-    .redes-sociales {
-        font-size: 1rem;
-    }
-    .newsletter-info {
+    .footer-arriba .newsletter-info {
         font-size: 1.2rem;
     }
-    .newsletter-email {
+    .footer-arriba .newsletter-email {
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 1rem;
     }
-    .boton-enviar {
-        background-color: black;
-        color: white;
-        border-color: black;
-    }
-    .footer-info {
-        font-size: 0.9rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-contact {
-        font-size: 0.9rem;
-    }
-    .footer-inferior {
-        font-size: 0.8rem;
-        padding: 2%;
-    }
-    /* boton para subir al hacer scroll */
-    .ir-arriba-boton {
-        display: block;
-        position: fixed;
-        z-index: 1000;
-        right: 25px;
-        bottom: 25px;
-        transition: all .2s;
-        align-self: center;
-        cursor: pointer;
-    }
-    .ir-arriba-boton:hover {
-        transform: scale(1.1);
-    }
-    .to-top {
-        border-radius: 50%;
-    }
-    div .mensaje-texto {
+    .pie .footer-down .redes-sociales {
         font-size: 1rem;
     }
-    /* ==== pagina productos =====*/
-    .productos-pag {
+    .pie .footer-info {
+        font-size: 0.9rem;
+    }
+    .pie .footer-info .footer-contact {
+        font-size: 0.9rem;
+    }
+    /* ==== pagina product ==== */
+    .pagina-productos .productos-pag {
+        font-size: 1.3rem;
+    }
+    .pagina-productos .pagina-filtro {
         font-size: 1.2rem;
     }
-    .filtrar {
-        font-size: 1.2rem;
-    }
-    .productos-varios {
+    .pagina-productos .pagina-filtro .productos-varios {
         border: none;
     }
-    /* ==== pagina sonbre nosotros ==== */
+    /* ==== pagina about us ==== */
+    .container .row .container-imagen {
+        margin-top: 15;
+    }
     .info-nosotros h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         padding-top: 5%;
     }
     .info-nosotros p {
         font-size: 1.5rem;
     }
-    /* ==== pagina info & ayuda ==== */
+    /* ==== pagina info ==== */
     .info-fiji div {
         font-size: 1rem;
         padding: 2%;
     }
-    .info-fiji h3 {
+    .info-fiji div h3 {
         padding: 2%;
         font-size: 1.8rem;
     }
-    /* ==== pagina contacto ==== */
+    /* ==== pagina contact ==== */
     .contacto h2 {
         font-size: 1.5rem;
     }
@@ -592,78 +506,4 @@ form div {
         height: 40px;
         width: 70px;
     }
-    .click:hover {
-        -webkit-animation: 0.7s click 1;
-    }
-}
-
-
-/* === scroll to-top ===*/
-
-#scroll {
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    background-color: #ffffff;
-    text-indent: -9999px;
-    display: none;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    border-radius: 60px
-}
-
-a#scroll {
-    box-shadow: 0 3px 15px 0 rgb(0 0 0 / 25%);
-}
-
-#scroll span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -8px;
-    margin-top: -12px;
-    height: 0;
-    width: 0;
-    border: 8px solid transparent;
-    border-bottom-color: #000000;
-}
-
-#scroll:hover {
-    transform: scale(1.1);
-}
-
-
-/* animacion mensaje inferior */
-
-@keyframes entrada {
-    0% {
-        transform: scale(0);
-        /* transform: translate(-100vw); */
-    }
-    100% {
-        transform: scale(1);
-        /* transform: translate(0vw); */
-    }
-}
-
-@-webkit-keyframes click {
-    25%,
-    75% {
-        -webkit-transform: scale(0.8);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-    }
-}
-
-.marquesina {
-    background: #000000;
-    color: #ffff;
-    font-size: 1rem;
-    height: 25px;
-    position: fixed;
-    bottom: 0%;
 }

@@ -1,0 +1,171 @@
+/* ==== pagina home ==== */
+
+.best-deals {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    .name {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        animation-name: entrada;
+        animation-duration: 4s;
+        animation-delay: .8s;
+        animation-iteration-count: 1;
+    }
+    .destacados {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        justify-items: center;
+        .mujer {
+            align-self: center;
+            width: 90%;
+            max-width: 500px;
+        }
+        ul {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                padding-top: 4%;
+                list-style-type: none;
+                text-align: center;
+                flex-basis: 50%;
+                padding-bottom: 3%;
+                img {
+                    width: 80%;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+/* animacion mensaje inferior */
+
+.marquesina {
+    background: #000000;
+    color: #ffff;
+    font-size: 0.8rem;
+    height: 20px;
+    position: fixed;
+    bottom: 0%;
+}
+
+.banner-inferior {
+    margin-bottom: 4%;
+}
+
+
+/* ==== pagina product ==== */
+
+.pagina-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    letter-spacing: .1em;
+    .productos-pag {
+        font-size: 1rem;
+        padding-bottom: 2%;
+        align-self: center;
+    }
+}
+
+
+/* ==== pagina about us ==== */
+
+.info-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    h2 {
+        font-size: 1.2rem;
+        padding-bottom: 4%;
+    }
+    p {
+        font-size: 0.8rem;
+        padding-bottom: 1%;
+    }
+}
+
+
+/* ==== pagina info ==== */
+
+.info-fiji div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    font-size: 0.8rem;
+    h3 {
+        padding: 2%;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ==== pagina contact ==== */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    h2 {
+        padding-top: 5%;
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 5%;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        flex-wrap: wrap;
+        div {
+            padding: 5%;
+        }
+    }
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 250px;
+}
+
+.enviar input {
+    background-color: #000000;
+    color: #ffffff;
+    height: 30px;
+    width: 60px;
+    border: #000000;
+    .click {
+        &:hover {
+            animation: 0.7s click 1;
+        }
+    }
+}

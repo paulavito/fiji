@@ -1,0 +1,48 @@
+/* footer */
+
+.footer-arriba {
+    border-top: thin solid #D6D6D6;
+    margin: 0 15%;
+    .logo-inferior {
+        width: 10%;
+        max-width: 100%;
+    }
+    .newsletter-info {
+        font-size: 0.8rem;
+    }
+    .newsletter-email {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        font-size: 0.8rem;
+        .newsletter-content {
+            .boton-enviar {
+                background-color: black;
+                color: white;
+                border-color: black;
+            }
+        }
+    }
+}
+
+.pie {
+    background-color: #F2F5E0;
+    .footer-down {
+        .redes-sociales {
+            font-size: 0.8rem;
+        }
+    }
+    .footer-info {
+        font-size: 0.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-contact {
+        font-size: 0.8rem;
+    }
+    .container-fluid {
+        .footer-inferior {
+            font-size: 0.8rem;
+            padding: 2%;
+        }
+    }
+}
