@@ -296,35 +296,27 @@
 
 @media (min-width: 768px) {
     /* pagina home */
-    .best-deals {
-        padding: 70px;
-        align-self: center;
-    }
-    .best-deals .name {
-        font-size: 1.5rem;
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        animation-name: entrada;
-        animation-duration: 4s;
-        animation-delay: .8s;
-        animation-iteration-count: 1;
-    }
-    .best-deals .mujer {
-        width: 100%;
-        max-width: 700px;
-    }
     .best-deals .destacados {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em 2em;
+        grid-column-gap: 10px;
         justify-items: center;
     }
-    .best-deals .destacados .li {
+    .best-deals .destacados .mujer {
+        width: 100%;
+        max-width: 700px;
+    }
+    .best-deals .destacados ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .best-deals .destacados ul li {
         font-size: 1.2rem;
     }
-    .best-deals .destacados li img {
+    .best-deals .destacados ul li img {
         width: 80%;
         max-width: 400px;
     }
@@ -441,10 +433,6 @@
     }
     /* pagina home */
     .best-deals {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
         padding-right: 5%;
     }
     .best-deals .name {
@@ -457,12 +445,19 @@
         animation-delay: .8s;
         animation-iteration-count: 1;
     }
-    .best-deals .mujer {
+    .best-deals .destacados {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em 2em;
+        justify-items: center;
+    }
+    .best-deals .destacados .mujer {
         align-self: center;
         width: 100%;
         max-width: 700px;
     }
-    .best-deals .destacados .li {
+    .best-deals .destacados li {
         font-size: 1.2rem;
     }
     .best-deals .destacados li img {
