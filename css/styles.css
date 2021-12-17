@@ -5,6 +5,27 @@
     font-family: 'Sen', sans-serif;
 }
 
+@keyframes entrada {
+    0% {
+        transform: scale(0);
+        /* transform: translate(-100vw); */
+    }
+    100% {
+        transform: scale(1);
+        /* transform: translate(0vw); */
+    }
+}
+
+@keyframes click {
+    25%,
+    75% {
+        -webkit-transform: scale(0.8);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+}
+
 .icons-link {
     display: flex;
     justify-content: center;
@@ -30,6 +51,58 @@
     transition: all .2s;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+/* footer */
+
+.footer-arriba {
+    border-top: thin solid #D6D6D6;
+    margin: 0 15%;
+}
+
+.footer-arriba .logo-inferior {
+    width: 10%;
+    max-width: 100%;
+}
+
+.footer-arriba .newsletter-info {
+    font-size: 0.8rem;
+}
+
+.footer-arriba .newsletter-email {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 0.8rem;
+}
+
+.footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.pie {
+    background-color: #F2F5E0;
+}
+
+.pie .footer-down .redes-sociales {
+    font-size: 0.8rem;
+}
+
+.pie .footer-info {
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie .footer-contact {
+    font-size: 0.8rem;
+}
+
+.pie .container-fluid .footer-inferior {
+    font-size: 0.8rem;
+    padding: 2%;
 }
 
 
@@ -67,14 +140,14 @@
     max-width: 500px;
 }
 
-.best-deals .destacados .ul {
+.best-deals .destacados ul {
     padding: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.best-deals .destacados .ul li {
+.best-deals .destacados ul li {
     padding-top: 4%;
     list-style-type: none;
     text-align: center;
@@ -82,7 +155,7 @@
     padding-bottom: 3%;
 }
 
-.best-deals .destacados .ul li img {
+.best-deals .destacados ul li img {
     width: 80%;
     max-width: 400px;
 }
@@ -214,56 +287,8 @@
     border: #000000;
 }
 
-
-/* footer */
-
-.footer-arriba {
-    border-top: thin solid #D6D6D6;
-    margin: 0 15%;
-}
-
-.footer-arriba .logo-inferior {
-    width: 10%;
-    max-width: 100%;
-}
-
-.footer-arriba .newsletter-info {
-    font-size: 0.8rem;
-}
-
-.footer-arriba .newsletter-email {
-    padding-top: 2%;
-    padding-bottom: 4%;
-    font-size: 0.8rem;
-}
-
-.footer-arriba .newsletter-email .newsletter-content .boton-enviar {
-    background-color: black;
-    color: white;
-    border-color: black;
-}
-
-.pie {
-    background-color: #F2F5E0;
-}
-
-.pie .footer-down .redes-sociales {
-    font-size: 0.8rem;
-}
-
-.pie .footer-info {
-    font-size: 0.6rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.pie .footer-contact {
-    font-size: 0.8rem;
-}
-
-.pie .container-fluid .footer-inferior {
-    font-size: 0.8rem;
-    padding: 2%;
+.enviar input .click:hover {
+    animation: 0.7s click 1;
 }
 
 
@@ -285,20 +310,9 @@
         animation-delay: .8s;
         animation-iteration-count: 1;
     }
-    .best-deals .destacados {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em 1em;
-        justify-items: center;
-    }
-    .best-deals .destacados .mujer {
+    .best-deals .mujer {
         width: 100%;
         max-width: 500px;
-    }
-    .best-deals .destacados .destacados ul li img {
-        width: 80%;
-        max-width: 400px;
     }
     /* footer */
     .footer-arriba .logo-inferior {
@@ -413,6 +427,10 @@
     }
     /* pagina home */
     .best-deals {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
         padding-right: 5%;
     }
     .best-deals .name {
@@ -425,19 +443,10 @@
         animation-delay: .8s;
         animation-iteration-count: 1;
     }
-    .best-deals .destacados {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em 1em;
-        justify-items: center;
-    }
-    .best-deals .destacados li {
-        font-size: 1.2rem;
-    }
-    .best-deals .destacados li img {
+    .best-deals .mujer {
+        align-self: center;
         width: 90%;
-        max-width: 400px;
+        max-width: 500px;
     }
     /* footer */
     .footer-arriba .logo-inferior {
@@ -502,8 +511,11 @@
         height: 60px;
         width: 600px;
     }
-    .enviar input {
+    .enviar .enviar input {
         height: 40px;
         width: 70px;
+    }
+    .enviar .enviar input .click:hover {
+        animation: 0.7s click 1;
     }
 }
