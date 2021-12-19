@@ -107,6 +107,8 @@
         text-align: center;
         flex-basis: 50%;
         padding-bottom: 3%; }
+        .best-deals .destacados ul li p {
+          font-size: 0.8rem; }
         .best-deals .destacados ul li img {
           width: 80%;
           max-width: 400px; }
@@ -208,22 +210,25 @@
 /* ====== Media Queries ======== */
 @media (min-width: 768px) {
   /* pagina home */
-  .best-deals .destacados {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    justify-items: center; }
-    .best-deals .destacados .mujer {
+  .best-deals {
+    padding-left: 2%;
+    padding-right: 2%; }
+    .best-deals .destacados {
       width: 100%;
-      max-width: 600px; }
-    .best-deals .destacados ul {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap; }
-      .best-deals .destacados ul li {
-        font-size: 1.2rem; }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      justify-items: center; }
+      .best-deals .destacados .mujer {
+        width: 100%;
+        max-width: 600px; }
+      .best-deals .destacados ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; }
+        .best-deals .destacados ul li p {
+          font-size: 0.9rem; }
         .best-deals .destacados ul li img {
           width: 80%;
           max-width: 400px; }
@@ -316,27 +321,30 @@
   .header-navbar .content .titulo-fiji {
     font-size: 2em; }
   /* pagina home */
-  .best-deals .name {
-    font-size: 2.5rem;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    animation-name: entrada;
-    animation-duration: 4s;
-    animation-delay: .8s;
-    animation-iteration-count: 1; }
-  .best-deals .destacados {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3em 2em;
-    justify-items: center; }
-    .best-deals .destacados .mujer {
-      align-self: center;
+  .best-deals {
+    padding-left: 2%;
+    padding-right: 2%; }
+    .best-deals .name {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      animation-name: entrada;
+      animation-duration: 4s;
+      animation-delay: .8s;
+      animation-iteration-count: 1; }
+    .best-deals .destacados {
       width: 100%;
-      max-width: 600px; }
-    .best-deals .destacados li {
-      font-size: 1.2rem; }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3em 2em;
+      justify-items: center; }
+      .best-deals .destacados .mujer {
+        align-self: center;
+        width: 100%;
+        max-width: 600px; }
+      .best-deals .destacados li p {
+        font-size: 1.2rem; }
       .best-deals .destacados li img {
         width: 90%;
         max-width: 400px; }

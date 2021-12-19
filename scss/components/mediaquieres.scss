@@ -3,6 +3,8 @@
             @media (min-width: 768px) {
                 /* pagina home */
                 .best-deals {
+                    padding-left: 2%;
+                    padding-right: 2%;
                     .destacados {
                         width: 100%;
                         display: grid;
@@ -19,7 +21,9 @@
                             align-items: center;
                             flex-wrap: wrap;
                             li {
-                                font-size: 1.2rem;
+                                p {
+                                    font-size: 0.9rem;
+                                }
                                 img {
                                     width: 80%;
                                     max-width: 400px;
@@ -161,6 +165,8 @@
                 }
                 /* pagina home */
                 .best-deals {
+                    padding-left: 2%;
+                    padding-right: 2%;
                     .name {
                         font-size: 2.5rem;
                         text-align: center;
@@ -183,7 +189,9 @@
                             max-width: 600px;
                         }
                         li {
-                            font-size: 1.2rem;
+                            p {
+                                font-size: 1.2rem;
+                            }
                             img {
                                 width: 90%;
                                 max-width: 400px;
