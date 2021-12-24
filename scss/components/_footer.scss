@@ -1,7 +1,7 @@
 /* footer */
 
 .footer-arriba {
-    border-top: thin solid #D6D6D6;
+    border-top: thin solid $border-footer;
     margin: 0 15%;
     .logo-inferior {
         width: 10%;
@@ -15,17 +15,33 @@
         padding-bottom: 4%;
         font-size: 0.8rem;
         .newsletter-content {
+            .email {
+                padding: 0.4em;
+                width: 200px;
+            }
             .boton-enviar {
-                background-color: black;
-                color: white;
-                border-color: black;
+                padding: 0.4em;
+                margin-top: 0.8em;
+                text-decoration: none;
+                display: inline-block;
+                justify-content: center;
+                border-radius: (5px);
+                background-color: $color-black;
+                color: $color-white;
+                border: solid 2px $color-black;
+                &:hover {
+                    background-color: $color-green;
+                    color: $color-black;
+                    border-color: $color-green;
+                    font-weight: bold;
+                }
             }
         }
     }
 }
 
 .pie {
-    background-color: #F2F5E0;
+    background-color: $footer-color;
     .footer-down {
         .redes-sociales {
             font-size: 0.8rem;

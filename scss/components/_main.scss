@@ -53,8 +53,8 @@
 /* animacion mensaje inferior */
 
 .marquesina {
-    background: #000000;
-    color: #ffff;
+    background: $color-black;
+    color: $color-white;
     font-size: 0.8rem;
     height: 20px;
     position: fixed;
@@ -160,16 +160,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 30px;
-    width: 250px;
+    @include size (30px, 250px)
 }
 
 .enviar input {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $color-black;
+    color: $color-white;
     height: 30px;
     width: 60px;
-    border: #000000;
+    border: $color-black;
     .click {
         &:hover {
             animation: 0.7s click 1;

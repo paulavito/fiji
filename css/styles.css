@@ -1,3 +1,6 @@
+/* color */
+/* footer background color */
+/* scroll shadow */
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 * {
   margin: 0%;
@@ -52,10 +55,24 @@
     padding-top: 2%;
     padding-bottom: 4%;
     font-size: 0.8rem; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 200px; }
     .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
-      background-color: black;
-      color: white;
-      border-color: black; }
+      padding: 0.4em;
+      margin-top: 0.8em;
+      text-decoration: none;
+      display: inline-block;
+      justify-content: center;
+      border-radius: 5px;
+      background-color: #000000;
+      color: #ffffff;
+      border: solid 2px #000000; }
+      .footer-arriba .newsletter-email .newsletter-content .boton-enviar:hover {
+        background-color: #ccd5ae;
+        color: #000000;
+        border-color: #ccd5ae;
+        font-weight: bold; }
 
 .pie {
   background-color: #F2F5E0; }
@@ -116,7 +133,7 @@
 /* animacion mensaje inferior */
 .marquesina {
   background: #000000;
-  color: #ffff;
+  color: #ffffff;
   font-size: 0.8rem;
   height: 20px;
   position: fixed;
@@ -241,6 +258,11 @@
     max-width: 100%; }
   .footer-arriba .newsletter-email {
     padding-bottom: 2%; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 300px; }
+    .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+      margin-left: 4px; }
   .pie .redes-sociales {
     display: flex;
     flex-direction: row;
@@ -256,7 +278,9 @@
   .pagina-productos {
     display: flex;
     flex-direction: row;
-    letter-spacing: .1em; }
+    letter-spacing: .1em;
+    align-items: center;
+    justify-content: center; }
     .pagina-productos .productos-pag {
       font-size: 1rem;
       align-self: center; }
@@ -364,9 +388,14 @@
   .footer-arriba .newsletter-info {
     font-size: 1.2rem; }
   .footer-arriba .newsletter-email {
-    padding-top: 2%;
+    padding-bottom: 2%;
     padding-bottom: 2%;
     font-size: 1rem; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 300px; }
+    .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+      margin-left: 4px; }
   .pie .footer-down .redes-sociales {
     font-size: 1rem; }
   .pie .footer-info {
