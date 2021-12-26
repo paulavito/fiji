@@ -81,6 +81,26 @@
 }
 
 
+/* ==== pagina product inside ==== */
+
+.pagina-articulos {
+    margin: 1rem;
+    border: none;
+    .info-articulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 1.5em;
+        }
+        .price {
+            font-size: 1.2em;
+        }
+    }
+}
+
+
 /* ==== pagina about us ==== */
 
 .info-nosotros {

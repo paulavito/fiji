@@ -153,6 +153,20 @@
     padding-bottom: 2%;
     align-self: center; }
 
+/* ==== pagina product inside ==== */
+.pagina-articulos {
+  margin: 1rem;
+  border: none; }
+  .pagina-articulos .info-articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pagina-articulos .info-articulos h1 {
+      font-size: 1.5em; }
+    .pagina-articulos .info-articulos .price {
+      font-size: 1.2em; }
+
 /* ==== pagina about us ==== */
 .info-nosotros {
   display: flex;
@@ -284,6 +298,25 @@
     .pagina-productos .productos-pag {
       font-size: 1rem;
       align-self: center; }
+  /* ==== pagina product inside ==== */
+  .pagina-articulos {
+    margin: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: none;
+    flex-direction: row; }
+    .pagina-articulos .imagen-articulo {
+      width: 400px; }
+    .pagina-articulos .info-articulos {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 3%;
+      padding-left: 2%;
+      justify-items: center; }
+      .pagina-articulos .info-articulos h1 {
+        font-size: 1.5em; }
+      .pagina-articulos .info-articulos .price {
+        font-size: 1.2em; }
   /* ==== pagina about us ==== */
   .container .row .container-imagen {
     margin-top: 8; }
@@ -409,6 +442,25 @@
     font-size: 1.2rem; }
     .pagina-productos .pagina-filtro .productos-varios {
       border: none; }
+  /* ==== pagina product inside ==== */
+  .pagina-articulos {
+    margin: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    border: none;
+    flex-direction: row; }
+    .pagina-articulos .imagen-articulo {
+      width: 600px;
+      align-self: center; }
+    .pagina-articulos .info-articulos {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 3%;
+      justify-items: center; }
+      .pagina-articulos .info-articulos h1 {
+        font-size: 2em; }
+      .pagina-articulos .info-articulos .price {
+        font-size: 1.8em; }
   /* ==== pagina about us ==== */
   .container .row .container-imagen {
     margin-top: 15; }

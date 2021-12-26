@@ -78,6 +78,30 @@
                         align-self: center;
                     }
                 }
+                /* ==== pagina product inside ==== */
+                .pagina-articulos {
+                    margin: 4rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    border: none;
+                    flex-direction: row;
+                    .imagen-articulo {
+                        width: 400px;
+                    }
+                    .info-articulos {
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        padding-top: 3%;
+                        padding-left: 2%;
+                        justify-items: center;
+                        h1 {
+                            font-size: 1.5em;
+                        }
+                        .price {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
                 /* ==== pagina about us ==== */
                 .container {
                     .row {
@@ -262,6 +286,30 @@
                         font-size: 1.2rem;
                         .productos-varios {
                             border: none;
+                        }
+                    }
+                }
+                /* ==== pagina product inside ==== */
+                .pagina-articulos {
+                    margin: 4rem;
+                    margin-left: 8rem;
+                    margin-right: 8rem;
+                    border: none;
+                    flex-direction: row;
+                    .imagen-articulo {
+                        width: 600px;
+                        align-self: center;
+                    }
+                    .info-articulos {
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        padding-top: 3%;
+                        justify-items: center;
+                        h1 {
+                            font-size: 2em;
+                        }
+                        .price {
+                            font-size: 1.8em;
                         }
                     }
                 }
