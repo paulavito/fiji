@@ -8,11 +8,11 @@
 @keyframes entrada {
     0% {
         transform: scale(0);
-        /* transform: translate(-100vw); */
+        transform: translate(-100vw);
     }
     100% {
         transform: scale(1);
-        /* transform: translate(0vw); */
+        transform: translate(0vw);
     }
 }
 

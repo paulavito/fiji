@@ -91,11 +91,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .crumb-productos {
+            li {
+                font-size: 0.7em;
+                color: $color-black;
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
         h1 {
             font-size: 1.5em;
         }
         .price {
             font-size: 1.2em;
+        }
+        .boton-primario {
+            @extend .boton;
+            width: 200px;
+            height: 40px;
         }
     }
 }
@@ -184,11 +199,9 @@
 }
 
 .enviar input {
-    background-color: $color-black;
-    color: $color-white;
-    height: 30px;
-    width: 60px;
-    border: $color-black;
+    @extend .boton;
+    height: 40px;
+    width: 90px;
     .click {
         &:hover {
             animation: 0.7s click 1;

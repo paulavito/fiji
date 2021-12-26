@@ -156,8 +156,13 @@
                     @include size (50px, 500px)
                 }
                 .enviar input {
-                    height: 50px;
-                    width: 90px;
+                    height: 60px;
+                    width: 100px;
+                    .click {
+                        &:hover {
+                            animation: 0.7s click 1;
+                        }
+                    }
                 }
                 /* === scroll to-top ===*/
                 #scroll {
@@ -309,7 +314,7 @@
                             font-size: 2em;
                         }
                         .price {
-                            font-size: 1.8em;
+                            font-size: 1.5em;
                         }
                     }
                 }
@@ -358,12 +363,12 @@
                     }
                 }
                 .box {
-                    @include size (60px, 600px)
+                    @include size (70px, 700px)
                 }
                 .enviar {
                     .enviar input {
-                        height: 40px;
-                        width: 70px;
+                        height: 30px;
+                        width: 100px;
                         .click {
                             &:hover {
                                 animation: 0.7s click 1;

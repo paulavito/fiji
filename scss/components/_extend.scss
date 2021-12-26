@@ -1,0 +1,11 @@
+.boton {
+    border: solid 2px $color-black;
+    background-color: $color-black;
+    color: $color-white;
+    border-radius: 4px;
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        border-color: $color-black;
+    }
+}
