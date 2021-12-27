@@ -1,0 +1,58 @@
+/* footer */
+
+.footer-arriba {
+    border-top: thin solid $border-footer;
+    margin: 0 15%;
+    .logo-inferior {
+        width: 10%;
+        max-width: 100%;
+    }
+    .newsletter-info {
+        font-size: 0.8rem;
+    }
+    .newsletter-email {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        font-size: 0.8rem;
+        .newsletter-content {
+            .email {
+                padding: 0.4em;
+                width: 200px;
+            }
+            .boton-enviar {
+                @extend .boton;
+                padding: 0.4em;
+                margin-top: 0.8em;
+                &:hover {
+                    background-color: $color-green;
+                    color: $color-black;
+                    border-color: $color-green;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.pie {
+    background-color: $footer-color;
+    .footer-down {
+        .redes-sociales {
+            font-size: 1rem;
+        }
+    }
+    .footer-info {
+        font-size: 0.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-contact {
+        font-size: 0.8rem;
+    }
+    .container-fluid {
+        .footer-inferior {
+            font-size: 0.8rem;
+            padding: 2%;
+        }
+    }
+}

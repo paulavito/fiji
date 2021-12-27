@@ -1,121 +1,114 @@
+/* color */
+/* footer background color */
+/* scroll shadow */
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 * {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Sen', sans-serif;
-}
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Sen', sans-serif; }
 
+/* keyframes */
 @keyframes entrada {
-    0% {
-        transform: scale(0);
-        /* transform: translate(-100vw); */
-    }
-    100% {
-        transform: scale(1);
-        /* transform: translate(0vw); */
-    }
-}
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 @keyframes click {
-    25%,
-    75% {
-        -webkit-transform: scale(0.8);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-    }
-}
+  25%,
+  75% {
+    -webkit-transform: scale(0.8); }
+  50% {
+    -webkit-transform: scale(1.1); } }
+
+.red-instagram {
+  color: #F56040;
+  box-shadow: 0 3px 15px 0 #ccd5ae; }
+
+.red-pinterest {
+  color: #a33e20;
+  box-shadow: 0 3px 15px 0 #ccd5ae; }
+
+.red-facebook {
+  color: #3b5998;
+  box-shadow: 0 3px 15px 0 #ccd5ae; }
+
+.boton, .footer-arriba .newsletter-email .newsletter-content .boton-enviar, .pagina-articulos .info-articulos .boton-primario, .enviar input {
+  border: solid 2px #000000;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px; }
+  .boton:hover, .footer-arriba .newsletter-email .newsletter-content .boton-enviar:hover, .pagina-articulos .info-articulos .boton-primario:hover, .enviar input:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000; }
 
 .icons-link {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2%;
-}
-
-.icons-link .search:hover {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2%; }
+  .icons-link .search:hover {
     transition: all .2s;
     cursor: pointer;
-    transform: scale(1.1);
-}
-
-.icons-link .bag:hover {
+    transform: scale(1.1); }
+  .icons-link .bag:hover {
     transition: all .2s;
     cursor: pointer;
-    transform: scale(1.1);
-}
-
-.icons-link .user:hover {
+    transform: scale(1.1); }
+  .icons-link .user:hover {
     transition: all .2s;
     cursor: pointer;
-    transform: scale(1.1);
-}
-
+    transform: scale(1.1); }
 
 /* footer */
-
 .footer-arriba {
-    border-top: thin solid #D6D6D6;
-    margin: 0 15%;
-}
-
-.footer-arriba .logo-inferior {
+  border-top: thin solid #D6D6D6;
+  margin: 0 15%; }
+  .footer-arriba .logo-inferior {
     width: 10%;
-    max-width: 100%;
-}
-
-.footer-arriba .newsletter-info {
-    font-size: 0.8rem;
-}
-
-.footer-arriba .newsletter-email {
+    max-width: 100%; }
+  .footer-arriba .newsletter-info {
+    font-size: 0.8rem; }
+  .footer-arriba .newsletter-email {
     padding-top: 2%;
     padding-bottom: 4%;
-    font-size: 0.8rem;
-}
-
-.footer-arriba .newsletter-email .newsletter-content .boton-enviar {
-    background-color: black;
-    color: white;
-    border-color: black;
-}
+    font-size: 0.8rem; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 200px; }
+    .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+      padding: 0.4em;
+      margin-top: 0.8em; }
+      .footer-arriba .newsletter-email .newsletter-content .boton-enviar:hover {
+        background-color: #ccd5ae;
+        color: #000000;
+        border-color: #ccd5ae;
+        font-weight: bold; }
 
 .pie {
-    background-color: #F2F5E0;
-}
-
-.pie .footer-down .redes-sociales {
-    font-size: 0.8rem;
-}
-
-.pie .footer-info {
+  background-color: #F2F5E0; }
+  .pie .footer-down .redes-sociales {
+    font-size: 1rem; }
+  .pie .footer-info {
     font-size: 0.6rem;
     align-items: center;
-    justify-content: center;
-}
-
-.pie .footer-contact {
+    justify-content: center; }
+  .pie .footer-contact {
+    font-size: 0.8rem; }
+  .pie .container-fluid .footer-inferior {
     font-size: 0.8rem;
-}
-
-.pie .container-fluid .footer-inferior {
-    font-size: 0.8rem;
-    padding: 2%;
-}
-
+    padding: 2%; }
 
 /* ==== pagina home ==== */
-
 .best-deals {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.best-deals .name {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
+  .best-deals .name {
     font-size: 1.2rem;
     text-align: center;
     padding-top: 4%;
@@ -123,412 +116,402 @@
     animation-name: entrada;
     animation-duration: 4s;
     animation-delay: .8s;
-    animation-iteration-count: 1;
-}
-
-.best-deals .destacados {
+    animation-iteration-count: 1; }
+  .best-deals .destacados {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 10px;
-    justify-items: center;
-}
-
-.best-deals .destacados .mujer {
-    align-self: center;
-    width: 90%;
-    max-width: 500px;
-}
-
-.best-deals .destacados ul {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.best-deals .destacados ul li {
-    padding-top: 4%;
-    list-style-type: none;
-    text-align: center;
-    flex-basis: 50%;
-    padding-bottom: 3%;
-}
-
-.best-deals .destacados ul li img {
-    width: 80%;
-    max-width: 400px;
-}
-
+    justify-items: center; }
+    .best-deals .destacados .mujer {
+      align-self: center;
+      width: 90%;
+      max-width: 500px; }
+    .best-deals .destacados ul {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .best-deals .destacados ul li {
+        padding-top: 4%;
+        list-style-type: none;
+        text-align: center;
+        flex-basis: 50%;
+        padding-bottom: 3%; }
+        .best-deals .destacados ul li p {
+          font-size: 0.8rem; }
+        .best-deals .destacados ul li img {
+          width: 80%;
+          max-width: 400px; }
 
 /* animacion mensaje inferior */
-
 .marquesina {
-    background: #000000;
-    color: #ffff;
-    font-size: 0.8rem;
-    height: 20px;
-    position: fixed;
-    bottom: 0%;
-}
+  background: #000000;
+  color: #ffffff;
+  font-size: 0.8rem;
+  height: 20px;
+  position: fixed;
+  bottom: 0%; }
 
 .banner-inferior {
-    margin-bottom: 4%;
-}
-
+  margin-bottom: 4%; }
 
 /* ==== pagina product ==== */
-
 .pagina-productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    letter-spacing: .1em;
-}
-
-.pagina-productos .productos-pag {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  letter-spacing: .1em; }
+  .pagina-productos .productos-pag {
     font-size: 1rem;
     padding-bottom: 2%;
-    align-self: center;
-}
+    align-self: center; }
 
+/* ==== pagina product inside ==== */
+.pagina-articulos {
+  margin: 1rem;
+  border: none; }
+  .pagina-articulos .info-articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pagina-articulos .info-articulos .crumb-productos li {
+      font-size: 0.7em;
+      color: #000000; }
+      .pagina-articulos .info-articulos .crumb-productos li a {
+        text-decoration: none;
+        color: #000000; }
+    .pagina-articulos .info-articulos h1 {
+      font-size: 1.5em; }
+    .pagina-articulos .info-articulos .price {
+      font-size: 1.2em; }
+    .pagina-articulos .info-articulos .boton-primario {
+      width: 200px;
+      height: 40px; }
 
 /* ==== pagina about us ==== */
-
 .info-nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
-}
-
-.info-nosotros h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2%; }
+  .info-nosotros h2 {
     font-size: 1.2rem;
-    padding-bottom: 4%;
-}
-
-.info-nosotros p {
+    padding-bottom: 4%; }
+  .info-nosotros p {
     font-size: 0.8rem;
-    padding-bottom: 1%;
-}
-
+    padding-bottom: 1%; }
 
 /* ==== pagina info ==== */
-
 .info-fiji div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 6%;
-    padding-bottom: 3%;
-    font-size: 0.8rem;
-}
-
-.info-fiji div h3 {
-    padding: 2%;
-    font-size: 1.2rem;
-}
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 3%;
+  font-size: 0.8rem; }
+  .info-fiji div h1 {
+    margin-top: 8%;
+    font-size: 1.2rem; }
+  .info-fiji div h4 {
+    font-size: 0.9rem; }
 
 /* ==== pagina contact ==== */
-
 .contacto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
-}
-
-.contacto h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  padding-top: 2%; }
+  .contacto h1 {
     padding-top: 5%;
-    font-size: 1rem;
-}
-
-.contacto p {
-    font-size: 0.8rem;
-}
+    font-size: 1.2rem; }
+  .contacto p {
+    font-size: 0.8rem; }
 
 .formulario {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-bottom: 5%;
-}
-
-.formulario form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 5%; }
+  .formulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2%;
-    flex-wrap: wrap;
-}
-
-.formulario form div {
-    padding: 5%;
-}
+    flex-wrap: wrap; }
+    .formulario form div {
+      padding: 5%; }
 
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 30px;
-    width: 250px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 30px;
+  width: 250px; }
 
 .enviar input {
-    background-color: #000000;
-    color: #ffffff;
-    height: 30px;
-    width: 60px;
-    border: #000000;
-}
-
-.enviar input .click:hover {
-    animation: 0.7s click 1;
-}
-
+  height: 40px;
+  width: 90px; }
+  .enviar input .click:hover {
+    animation: 0.7s click 1; }
 
 /* ====== Media Queries ======== */
-
 @media (min-width: 768px) {
-    /* pagina home */
+  /* pagina home */
+  .best-deals {
+    padding-left: 2%;
+    padding-right: 2%; }
     .best-deals .destacados {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      justify-items: center; }
+      .best-deals .destacados .mujer {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        justify-items: center;
-    }
-    .best-deals .destacados .mujer {
-        width: 100%;
-        max-width: 600px;
-    }
-    .best-deals .destacados ul {
+        max-width: 600px; }
+      .best-deals .destacados ul {
         padding: 0;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-    }
-    .best-deals .destacados ul li {
-        font-size: 1.2rem;
-    }
-    .best-deals .destacados ul li img {
-        width: 80%;
-        max-width: 400px;
-    }
-    /* footer */
-    .footer-arriba .logo-inferior {
-        width: 6%;
-        max-width: 100%;
-    }
-    .footer-arriba .newsletter-email {
-        padding-bottom: 2%;
-    }
-    .pie .redes-sociales {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        font-size: 0.8rem;
-        padding-bottom: 2%;
-        padding-top: 2%;
-        align-self: center;
-    }
-    /* animacion mensaje inferior */
-    div .mensaje-texto {
-        font-size: 1rem;
-    }
-    /* ==== pagina product ==== */
-    .pagina-productos {
-        display: flex;
-        flex-direction: row;
-        letter-spacing: .1em;
-    }
+        flex-wrap: wrap; }
+        .best-deals .destacados ul li p {
+          font-size: 0.9rem; }
+        .best-deals .destacados ul li img {
+          width: 80%;
+          max-width: 400px; }
+  /* footer */
+  .footer-arriba .logo-inferior {
+    width: 6%;
+    max-width: 100%; }
+  .footer-arriba .newsletter-email {
+    padding-bottom: 2%; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 300px; }
+    .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+      margin-left: 4px; }
+  .pie .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    align-self: center;
+    font-size: 1.2rem; }
+  /* animacion mensaje inferior */
+  div .mensaje-texto {
+    font-size: 1rem; }
+  /* ==== pagina product ==== */
+  .pagina-productos {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: .1em;
+    align-items: center;
+    justify-content: center; }
     .pagina-productos .productos-pag {
-        font-size: 1rem;
-        align-self: center;
-    }
-    /* ==== pagina about us ==== */
-    .container .row .container-imagen {
-        margin-top: 8;
-    }
-    .info-nosotros h2 {
-        font-size: 1.5rem;
-    }
-    .info-nosotros p {
-        font-size: 1rem;
-    }
-    /* ==== pagina info ==== */
-    .info-fiji div {
-        font-size: 1rem;
-        padding-top: 3%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 3%;
-    }
-    .info-fiji div h3 {
-        font-size: 1.5rem;
-    }
-    /* ==== pagina contact ==== */
-    .contacto h2 {
-        font-size: 1.2rem;
-    }
-    .contacto p {
-        font-size: 0.9rem;
-    }
-    .formulario form div {
-        padding: 2%;
-    }
-    .box {
-        height: 50px;
-        width: 500px;
-    }
-    .enviar input {
-        height: 50px;
-        width: 90px;
-    }
-    /* === scroll to-top ===*/
-    #scroll {
-        position: fixed;
-        right: 20px;
-        bottom: 50px;
-        cursor: pointer;
-        width: 45px;
-        height: 45px;
-        background-color: #ffffff;
-        text-indent: -9999px;
-        display: none;
-        -webkit-border-radius: 60px;
-        -moz-border-radius: 60px;
-        border-radius: 60px;
-    }
-    a#scroll {
-        box-shadow: 0 3px 15px 0 #a3a3a3;
-    }
-    #scroll span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -8px;
-        margin-top: -12px;
-        height: 0;
-        width: 0;
-        border: 8px solid transparent;
-        border-bottom-color: #000000;
-    }
-    #scroll:hover {
-        transform: scale(1.1);
-    }
-}
+      font-size: 1rem;
+      align-self: center; }
+  /* ==== pagina product inside ==== */
+  .pagina-articulos {
+    margin: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: none;
+    flex-direction: row; }
+    .pagina-articulos .info-articulos {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 3%;
+      padding-left: 2%;
+      justify-items: center; }
+      .pagina-articulos .info-articulos h1 {
+        font-size: 1.5em; }
+      .pagina-articulos .info-articulos .price {
+        font-size: 1.2em; }
+  /* ==== pagina about us ==== */
+  .container .row .container-imagen {
+    margin-top: 8; }
+  .info-nosotros h1 {
+    font-size: 1.5rem; }
+  .info-nosotros p {
+    font-size: 1rem; }
+  /* ==== pagina info ==== */
+  .info-fiji div {
+    font-size: 1rem;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%; }
+    .info-fiji div h1 {
+      margin-top: 4%;
+      padding-bottom: 2%;
+      font-size: 1.5rem; }
+    .info-fiji div h4 {
+      padding-bottom: 1%;
+      font-size: 1.1rem; }
+  /* ==== pagina contact ==== */
+  .contacto h1 {
+    font-size: 1.5rem;
+    padding-bottom: 2%; }
+  .contacto p {
+    font-size: 0.9rem; }
+  .formulario form div {
+    padding: 2%; }
+  .box {
+    height: 50px;
+    width: 500px; }
+  .enviar input {
+    height: 60px;
+    width: 100px; }
+    .enviar input .click:hover {
+      animation: 0.7s click 1; }
+  /* === scroll to-top ===*/
+  #scroll {
+    position: fixed;
+    right: 22px;
+    bottom: 50px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px; }
+  a#scroll {
+    box-shadow: 0 3px 15px 0 #a3a3a3; }
+  #scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #000000; }
+  #scroll:hover {
+    transform: scale(1.1); } }
 
 @media (min-width: 1440px) {
-    .header-navbar .content .menu-hamburguesa {
-        font-size: 1.8em;
-    }
-    .header-navbar .content .titulo-fiji {
-        font-size: 2em;
-    }
-    /* pagina home */
+  .header-navbar .content .menu-hamburguesa {
+    font-size: 1.5em; }
+  .header-navbar .content .titulo-fiji {
+    font-size: 2rem; }
+  /* pagina home */
+  .best-deals {
+    padding-left: 2%;
+    padding-right: 2%; }
     .best-deals .name {
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        animation-name: entrada;
-        animation-duration: 4s;
-        animation-delay: .8s;
-        animation-iteration-count: 1;
-    }
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      animation-name: entrada;
+      animation-duration: 4s;
+      animation-delay: .8s;
+      animation-iteration-count: 1; }
     .best-deals .destacados {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em 2em;
-        justify-items: center;
-    }
-    .best-deals .destacados .mujer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3em 2em;
+      justify-items: center; }
+      .best-deals .destacados .mujer {
         align-self: center;
         width: 100%;
-        max-width: 600px;
-    }
-    .best-deals .destacados li {
-        font-size: 1.2rem;
-    }
-    .best-deals .destacados li img {
+        max-width: 600px; }
+      .best-deals .destacados li p {
+        font-size: 1.2rem; }
+      .best-deals .destacados li img {
         width: 90%;
-        max-width: 400px;
-    }
-    /* footer */
-    .footer-arriba .logo-inferior {
-        width: 4%;
-        max-width: 100%;
-    }
-    .footer-arriba .newsletter-info {
-        font-size: 1.2rem;
-    }
-    .footer-arriba .newsletter-email {
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-size: 1rem;
-    }
-    .pie .footer-down .redes-sociales {
-        font-size: 1rem;
-    }
-    .pie .footer-info {
-        font-size: 0.9rem;
-    }
-    .pie .footer-info .footer-contact {
-        font-size: 0.9rem;
-    }
-    /* ==== pagina product ==== */
-    .pagina-productos .productos-pag {
-        font-size: 1.3rem;
-    }
-    .pagina-productos .pagina-filtro {
-        font-size: 1.2rem;
-    }
+        max-width: 400px; }
+  /* footer */
+  .footer-arriba .logo-inferior {
+    width: 4%;
+    max-width: 100%; }
+  .footer-arriba .newsletter-info {
+    font-size: 1.2rem; }
+  .footer-arriba .newsletter-email {
+    padding-bottom: 2%;
+    padding-bottom: 2%;
+    font-size: 1rem; }
+    .footer-arriba .newsletter-email .newsletter-content .email {
+      padding: 0.4em;
+      width: 300px; }
+    .footer-arriba .newsletter-email .newsletter-content .boton-enviar {
+      margin-left: 4px; }
+  .pie .footer-down .redes-sociales {
+    font-size: 1.5rem; }
+  .pie .footer-info {
+    font-size: 0.9rem; }
+  .pie .footer-contact {
+    font-size: 0.9rem; }
+  /* ==== pagina product ==== */
+  .pagina-productos .productos-pag {
+    font-size: 1.3rem; }
+  .pagina-productos .pagina-filtro {
+    font-size: 1.2rem; }
     .pagina-productos .pagina-filtro .productos-varios {
-        border: none;
-    }
-    /* ==== pagina about us ==== */
-    .container .row .container-imagen {
-        margin-top: 15;
-    }
-    .info-nosotros h2 {
-        font-size: 1.8rem;
-        padding-top: 5%;
-    }
-    .info-nosotros p {
-        font-size: 1.5rem;
-    }
-    /* ==== pagina info ==== */
-    .info-fiji div {
-        font-size: 1rem;
-        padding: 2%;
-    }
-    .info-fiji div h3 {
-        padding: 2%;
-        font-size: 1.8rem;
-    }
-    /* ==== pagina contact ==== */
-    .contacto h2 {
-        font-size: 1.5rem;
-    }
-    .contacto p {
-        font-size: 1rem;
-    }
-    .box {
-        height: 60px;
-        width: 600px;
-    }
-    .enviar .enviar input {
-        height: 40px;
-        width: 70px;
-    }
+      border: none; }
+  /* ==== pagina product inside ==== */
+  .pagina-articulos {
+    margin: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    border: none;
+    flex-direction: row; }
+    .pagina-articulos .imagen-articulo {
+      align-self: center; }
+    .pagina-articulos .info-articulos {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 3%;
+      justify-items: center; }
+      .pagina-articulos .info-articulos h1 {
+        font-size: 2em; }
+      .pagina-articulos .info-articulos .price {
+        font-size: 1.5em; }
+  /* ==== pagina about us ==== */
+  .container .row .container-imagen {
+    margin-top: 15; }
+  .info-nosotros h1 {
+    font-size: 2.2rem;
+    padding-top: 5%; }
+  .info-nosotros p {
+    font-size: 1.5rem; }
+  /* ==== pagina info ==== */
+  .info-fiji div {
+    font-size: 1rem;
+    padding: 2%; }
+    .info-fiji div h1 {
+      margin-top: 4%;
+      padding-bottom: 2%;
+      font-size: 2.2rem; }
+    .info-fiji div h4 {
+      padding-bottom: 1%;
+      font-size: 1.8rem; }
+    .info-fiji div p {
+      font-size: 1.2rem; }
+  /* ==== pagina contact ==== */
+  .contacto h1 {
+    font-size: 2.2rem;
+    padding-bottom: 2%; }
+  .contacto p {
+    font-size: 1.2rem; }
+  .box {
+    height: 70px;
+    width: 700px; }
+  .enviar .enviar input {
+    height: 30px;
+    width: 100px; }
     .enviar .enviar input .click:hover {
-        animation: 0.7s click 1;
-    }
-}
+      animation: 0.7s click 1; } }

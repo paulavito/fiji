@@ -1,0 +1,8 @@
+$redes: ( instagram:#F56040, pinterest:#a33e20, facebook: #3b5998, );
+@each $red,
+$color in $redes {
+    .red-#{$red} {
+        color: $color;
+        box-shadow: 0 3px 15px 0 #ccd5ae;
+    }
+}

@@ -1,5 +1,9 @@
+@import "base/variables";
 @import "base/root";
+@import "components/mapas";
+@import "components/mixin";
+@import "components/extend";
 @import "components/header";
-@import "components/footer.scss";
+@import "components/footer";
 @import "components/main";
-@import "components/mediaquieres.scss";
+@import "components/mediaquieres";
