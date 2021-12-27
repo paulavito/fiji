@@ -7,13 +7,12 @@
   padding: 0%;
   font-family: 'Sen', sans-serif; }
 
+/* keyframes */
 @keyframes entrada {
   0% {
-    transform: scale(0);
-    transform: translate(-100vw); }
+    transform: scale(0); }
   100% {
-    transform: scale(1);
-    transform: translate(0vw); } }
+    transform: scale(1); } }
 
 @keyframes click {
   25%,
@@ -326,8 +325,6 @@
     margin-right: 5rem;
     border: none;
     flex-direction: row; }
-    .pagina-articulos .imagen-articulo {
-      width: 400px; }
     .pagina-articulos .info-articulos {
       align-items: flex-start;
       justify-content: flex-start;
@@ -473,7 +470,6 @@
     border: none;
     flex-direction: row; }
     .pagina-articulos .imagen-articulo {
-      width: 600px;
       align-self: center; }
     .pagina-articulos .info-articulos {
       align-items: flex-start;

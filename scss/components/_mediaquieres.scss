@@ -85,9 +85,6 @@
                     margin-right: 5rem;
                     border: none;
                     flex-direction: row;
-                    .imagen-articulo {
-                        width: 400px;
-                    }
                     .info-articulos {
                         align-items: flex-start;
                         justify-content: flex-start;
@@ -302,7 +299,6 @@
                     border: none;
                     flex-direction: row;
                     .imagen-articulo {
-                        width: 600px;
                         align-self: center;
                     }
                     .info-articulos {
