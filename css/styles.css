@@ -201,7 +201,8 @@
   justify-content: center;
   text-align: center;
   padding: 2%; }
-  .info-nosotros h2 {
+  .info-nosotros h1 {
+    padding-top: 5%;
     font-size: 1.2rem;
     padding-bottom: 4%; }
   .info-nosotros p {
@@ -493,8 +494,7 @@
   .container .row .container-imagen {
     margin-top: 15; }
   .info-nosotros h1 {
-    font-size: 2.2rem;
-    padding-top: 5%; }
+    font-size: 2.2rem; }
   .info-nosotros p {
     font-size: 1.5rem; }
   /* ==== pagina info ==== */
