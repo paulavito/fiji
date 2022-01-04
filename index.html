@@ -49,7 +49,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Fiji</h1>
+                        <h1 class="inside-title offcanvas-title" id="offcanvasNavbarLabel">Fiji</h1>
                     </div>
                     <div class="offcanvas-body text-decoration-none small">
                         <ul class="nav flex-column text-decoration-none ">
@@ -312,8 +312,9 @@
         });
 
         function showScroll() {
-            if ($(this).scrollTop() > 100 && $(this).width() > 500) {
-                $('#scroll').fadeIn();
+            if ($(this).scrollTop() > 100) {
+                if ($(this).width() > 500)
+                    $('#scroll').fadeIn();
                 $("#scrollNav").removeClass("bg-transparent");
                 $("#scrollNav").addClass("bg-white");
             } else {

@@ -39,6 +39,9 @@
 
 .pie {
     background-color: $footer-color;
+    position: absolute;
+    width: 100%;
+    padding-top: 2%;
     .footer-down {
         .redes-sociales {
             font-size: 1rem;
