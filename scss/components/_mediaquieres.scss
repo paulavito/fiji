@@ -1,10 +1,16 @@
             /* ====== Media Queries ======== */
             
             @media (min-width: 768px) {
+                .titulo-fiji {
+                    font-size: 1.6rem;
+                }
                 /* pagina home */
                 .best-deals {
                     padding-left: 2%;
                     padding-right: 2%;
+                    .name {
+                        font-size: 1.5rem;
+                    }
                     .destacados {
                         width: 100%;
                         display: grid;
@@ -21,6 +27,9 @@
                             align-items: center;
                             flex-wrap: wrap;
                             li {
+                                h3 {
+                                    font-size: 1.1rem;
+                                }
                                 p {
                                     font-size: 0.9rem;
                                 }
@@ -34,6 +43,9 @@
                 }
                 /* footer */
                 .footer-arriba {
+                    .stay {
+                        font-size: 1.9em;
+                    }
                     .logo-inferior {
                         width: 6%;
                         max-width: 100%;
@@ -91,7 +103,7 @@
                         padding-top: 3%;
                         padding-left: 2%;
                         justify-items: center;
-                        h1 {
+                        h2 {
                             font-size: 1.5em;
                         }
                         .price {
@@ -108,7 +120,7 @@
                     }
                 }
                 .info-nosotros {
-                    h1 {
+                    h2 {
                         font-size: 1.5rem;
                     }
                     p {
@@ -122,19 +134,19 @@
                     padding-left: 2%;
                     padding-right: 2%;
                     padding-bottom: 3%;
-                    h1 {
+                    h2 {
                         margin-top: 4%;
                         padding-bottom: 2%;
                         font-size: 1.5rem;
                     }
-                    h4 {
+                    h3 {
                         padding-bottom: 1%;
                         font-size: 1.1rem;
                     }
                 }
                 /* ==== pagina contact ==== */
                 .contacto {
-                    h1 {
+                    h2 {
                         font-size: 1.5rem;
                         padding-bottom: 2%;
                     }
@@ -199,11 +211,11 @@
                 .header-navbar {
                     .content {
                         .menu-hamburguesa {
-                            font-size: 1.5em;
+                            font-size: 2.2em;
                         }
-                        .titulo-fiji {
-                            font-size: 2rem;
-                        }
+                    }
+                    .titulo-fiji {
+                        font-size: 2rem;
                     }
                 }
                 /* pagina home */
@@ -211,7 +223,7 @@
                     padding-left: 2%;
                     padding-right: 2%;
                     .name {
-                        font-size: 2.5rem;
+                        font-size: 2.3rem;
                         text-align: center;
                         padding-top: 2%;
                         padding-bottom: 2%;
@@ -231,19 +243,35 @@
                             width: 100%;
                             max-width: 600px;
                         }
-                        li {
-                            p {
-                                font-size: 1.2rem;
-                            }
-                            img {
-                                width: 90%;
-                                max-width: 400px;
+                        ul {
+                            li {
+                                h3 {
+                                    font-size: 1.5rem;
+                                }
+                                strong {
+                                    font-size: 1.4rem;
+                                }
+                                img {
+                                    width: 90%;
+                                    max-width: 400px;
+                                }
                             }
                         }
                     }
                 }
+                .card-body {
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                    strong {
+                        font-size: 1.4rem;
+                    }
+                }
                 /* footer */
                 .footer-arriba {
+                    .stay {
+                        font-size: 2.2rem;
+                    }
                     .logo-inferior {
                         width: 4%;
                         max-width: 100%;
@@ -306,7 +334,7 @@
                         justify-content: flex-start;
                         padding-top: 3%;
                         justify-items: center;
-                        h1 {
+                        h2 {
                             font-size: 2em;
                         }
                         .price {
@@ -323,7 +351,7 @@
                     }
                 }
                 .info-nosotros {
-                    h1 {
+                    h2 {
                         font-size: 2.2rem;
                     }
                     p {
@@ -334,12 +362,12 @@
                 .info-fiji div {
                     font-size: 1rem;
                     padding: 2%;
-                    h1 {
+                    h2 {
                         margin-top: 4%;
                         padding-bottom: 2%;
                         font-size: 2.2rem;
                     }
-                    h4 {
+                    h3 {
                         padding-bottom: 1%;
                         font-size: 1.8rem;
                     }
@@ -349,7 +377,7 @@
                 }
                 /* ==== pagina contact ==== */
                 .contacto {
-                    h1 {
+                    h2 {
                         font-size: 2.2rem;
                         padding-bottom: 2%;
                     }

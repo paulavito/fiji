@@ -3,8 +3,11 @@
 .footer-arriba {
     border-top: thin solid $border-footer;
     margin: 0 15%;
+    .stay {
+        font-size: 1.5rem;
+    }
     .logo-inferior {
-        width: 10%;
+        width: 15%;
         max-width: 100%;
     }
     .newsletter-info {

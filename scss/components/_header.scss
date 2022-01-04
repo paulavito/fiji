@@ -1,9 +1,12 @@
+         .titulo-fiji {
+             font-size: 1.5rem;
+         }
+         
          .icons-link {
              display: flex;
-             justify-content: center;
+             align-content: center;
              flex-direction: row;
              justify-content: space-between;
-             align-items: center;
              padding-right: 2%;
              .search {
                  &:hover {
