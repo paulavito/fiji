@@ -83,16 +83,48 @@
 
 /* ==== pagina product ==== */
 
-.pagina-productos {
+.articulos {
+    .img-fluid {
+        padding-top: 20%;
+    }
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    letter-spacing: .1em;
+    padding-top: 10%;
     .productos-pag {
-        font-size: 1rem;
-        padding-bottom: 2%;
-        padding-left: 30%;
+        letter-spacing: .1em;
+        margin: 0%;
+        font-size: 0.9rem;
         align-self: center;
+    }
+    .filtrar-productos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 5%;
+        .pagina-filtro {
+            font-size: 0.9rem;
+        }
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+    }
+    a {
+        text-decoration: none;
+        .card-body {
+            h3 {
+                font-size: 1.1rem;
+                color: $color-black;
+            }
+            strong {
+                font-size: 1rem;
+                color: $color-black;
+            }
+        }
     }
 }
 
@@ -173,9 +205,9 @@
     h3 {
         align-items: center;
         justify-content: center;
-        text-align: center;
         font-size: 0.9rem;
         padding-bottom: 2%;
+        border-bottom: thin solid rgba(0, 0, 0, 0.25);
     }
 }
 

@@ -97,7 +97,7 @@
   width: 100%;
   padding-top: 2%; }
   .pie .footer-down .redes-sociales {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .pie .footer-info {
     font-size: 0.6rem;
     align-items: center;
@@ -172,16 +172,37 @@
   margin-bottom: 4%; }
 
 /* ==== pagina product ==== */
-.pagina-productos {
+.articulos .img-fluid {
+  padding-top: 20%; }
+
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  letter-spacing: .1em; }
-  .pagina-productos .productos-pag {
-    font-size: 1rem;
-    padding-bottom: 2%;
-    padding-left: 30%;
+  padding-top: 10%; }
+  .container .productos-pag {
+    letter-spacing: .1em;
+    margin: 0%;
+    font-size: 0.9rem;
     align-self: center; }
+  .container .filtrar-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 5%; }
+    .container .filtrar-productos .pagina-filtro {
+      font-size: 0.9rem; }
+    .container .filtrar-productos ul {
+      list-style-type: none;
+      text-align: center; }
+  .container a {
+    text-decoration: none; }
+    .container a .card-body h3 {
+      font-size: 1.1rem;
+      color: #000000; }
+    .container a .card-body strong {
+      font-size: 1rem;
+      color: #000000; }
 
 /* ==== pagina product inside ==== */
 .pagina-articulos {
@@ -240,9 +261,9 @@
   .info-fiji div h3 {
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-size: 0.9rem;
-    padding-bottom: 2%; }
+    padding-bottom: 2%;
+    border-bottom: thin solid rgba(0, 0, 0, 0.25); }
 
 /* ==== pagina contact ==== */
 .contacto {
@@ -342,15 +363,36 @@
   div .mensaje-texto {
     font-size: 1rem; }
   /* ==== pagina product ==== */
-  .pagina-productos {
+  .articulos .img-fluid {
+    padding-top: 8%; }
+  .container {
     display: flex;
     flex-direction: row;
     letter-spacing: .1em;
     align-items: center;
-    justify-content: center; }
-    .pagina-productos .productos-pag {
-      font-size: 1rem;
-      align-self: center; }
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 5%; }
+    .container .productos-pag {
+      letter-spacing: .1em;
+      font-size: 0.9rem;
+      align-self: center;
+      padding-bottom: 5%; }
+    .container .filtrar-productos {
+      letter-spacing: .1em; }
+      .container .filtrar-productos .pagina-filtro {
+        font-size: 0.9rem; }
+      .container .filtrar-productos ul {
+        list-style-type: none;
+        text-align: center; }
+    .container a {
+      text-decoration: none; }
+      .container a .card-body h3 {
+        font-size: 1.1rem;
+        color: #000000; }
+      .container a .card-body strong {
+        font-size: 1rem;
+        color: #000000; }
   /* ==== pagina product inside ==== */
   .pagina-articulos {
     margin: 4rem;
@@ -442,6 +484,8 @@
   .header-navbar .titulo-fiji {
     font-size: 2rem; }
   /* pagina home */
+  .articulos .img-fluid {
+    padding-top: 4%; }
   .best-deals {
     padding-left: 2%;
     padding-right: 2%; }
@@ -499,12 +543,32 @@
   .pie .footer-contact {
     font-size: 1rem; }
   /* ==== pagina product ==== */
-  .pagina-productos .productos-pag {
-    font-size: 1.3rem; }
-  .pagina-productos .pagina-filtro {
-    font-size: 1.2rem; }
-    .pagina-productos .pagina-filtro .productos-varios {
-      border: none; }
+  .articulos .img-fluid {
+    padding-top: none; }
+  .container {
+    display: flex;
+    padding-top: 5%;
+    position: sticky; }
+    .container .productos-pag {
+      letter-spacing: .1em;
+      margin: 0%;
+      font-size: 1.2rem;
+      align-self: center; }
+    .container .filtrar-productos {
+      display: flex; }
+      .container .filtrar-productos .pagina-filtro {
+        font-size: 1.2rem; }
+      .container .filtrar-productos ul {
+        list-style-type: none;
+        text-align: center; }
+    .container a {
+      text-decoration: none; }
+      .container a .card-body h3 {
+        font-size: 1.2rem;
+        color: #000000; }
+      .container a .card-body strong {
+        font-size: 1.1rem;
+        color: #000000; }
   /* ==== pagina product inside ==== */
   .pagina-articulos {
     margin: 4rem;

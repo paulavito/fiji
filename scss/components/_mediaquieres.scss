@@ -86,15 +86,47 @@
                     font-size: 1rem;
                 }
                 /* ==== pagina product ==== */
-                .pagina-productos {
+                .articulos {
+                    .img-fluid {
+                        padding-top: 8%;
+                    }
+                }
+                .container {
                     display: flex;
                     flex-direction: row;
                     letter-spacing: .1em;
                     align-items: center;
                     justify-content: center;
+                    justify-content: space-between;
+                    padding-top: 5%;
                     .productos-pag {
-                        font-size: 1rem;
+                        letter-spacing: .1em;
+                        font-size: 0.9rem;
                         align-self: center;
+                        padding-bottom: 5%;
+                    }
+                    .filtrar-productos {
+                        letter-spacing: .1em;
+                        .pagina-filtro {
+                            font-size: 0.9rem;
+                        }
+                        ul {
+                            list-style-type: none;
+                            text-align: center;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        .card-body {
+                            h3 {
+                                font-size: 1.1rem;
+                                color: $color-black;
+                            }
+                            strong {
+                                font-size: 1rem;
+                                color: $color-black;
+                            }
+                        }
                     }
                 }
                 /* ==== pagina product inside ==== */
@@ -227,6 +259,11 @@
                     }
                 }
                 /* pagina home */
+                .articulos {
+                    .img-fluid {
+                        padding-top: 4%;
+                    }
+                }
                 .best-deals {
                     padding-left: 2%;
                     padding-right: 2%;
@@ -318,14 +355,42 @@
                     }
                 }
                 /* ==== pagina product ==== */
-                .pagina-productos {
-                    .productos-pag {
-                        font-size: 1.3rem;
+                .articulos {
+                    .img-fluid {
+                        padding-top: none;
                     }
-                    .pagina-filtro {
+                }
+                .container {
+                    display: flex;
+                    padding-top: 5%;
+                    position: sticky;
+                    .productos-pag {
+                        letter-spacing: .1em;
+                        margin: 0%;
                         font-size: 1.2rem;
-                        .productos-varios {
-                            border: none;
+                        align-self: center;
+                    }
+                    .filtrar-productos {
+                        display: flex;
+                        .pagina-filtro {
+                            font-size: 1.2rem;
+                        }
+                        ul {
+                            list-style-type: none;
+                            text-align: center;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        .card-body {
+                            h3 {
+                                font-size: 1.2rem;
+                                color: $color-black;
+                            }
+                            strong {
+                                font-size: 1.1rem;
+                                color: $color-black;
+                            }
                         }
                     }
                 }
