@@ -3,8 +3,11 @@
 .footer-arriba {
     border-top: thin solid $border-footer;
     margin: 0 15%;
+    .stay {
+        font-size: 1.5rem;
+    }
     .logo-inferior {
-        width: 10%;
+        width: 15%;
         max-width: 100%;
     }
     .newsletter-info {
@@ -36,9 +39,12 @@
 
 .pie {
     background-color: $footer-color;
+    position: absolute;
+    width: 100%;
+    padding-top: 2%;
     .footer-down {
         .redes-sociales {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
     .footer-info {
