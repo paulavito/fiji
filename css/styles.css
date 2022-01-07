@@ -42,9 +42,11 @@
     color: #000000;
     border-color: #000000; }
 
+/* navegation bar  */
 .titulo-fiji {
   font-size: 1.5rem; }
 
+/* iconos de la nav */
 .icons-link {
   display: flex;
   align-content: center;
