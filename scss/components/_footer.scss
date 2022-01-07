@@ -48,9 +48,13 @@
         }
     }
     .footer-info {
-        font-size: 0.6rem;
-        align-items: center;
-        justify-content: center;
+        .info-footer {
+            text-decoration: none;
+            color: $color-black;
+            font-size: 0.6rem;
+            align-items: center;
+            justify-content: center;
+        }
     }
     .footer-contact {
         font-size: 0.8rem;
