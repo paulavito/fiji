@@ -82,6 +82,11 @@
                             font-size: 1.2rem;
                         }
                     }
+                    .footer-info {
+                        .info-footer {
+                            font-size: 0.7rem;
+                        }
+                    }
                 }
                 /* animacion mensaje inferior */
                 div .mensaje-texto {
@@ -352,7 +357,9 @@
                         }
                     }
                     .footer-info {
-                        font-size: 1rem;
+                        .info-footer {
+                            font-size: 0.9rem;
+                        }
                     }
                     .footer-contact {
                         font-size: 1rem;
