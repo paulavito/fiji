@@ -101,7 +101,7 @@
   width: 100%;
   padding-top: 2%; }
   .pie .footer-down .redes-sociales {
-    font-size: 1.2rem; }
+    display: none; }
   .pie .footer-info .info-footer {
     text-decoration: none;
     color: #000000;
@@ -234,6 +234,9 @@
       height: 40px; }
 
 /* ==== pagina about us ==== */
+.imagen-team {
+  background-size: cover; }
+
 .info-nosotros {
   display: flex;
   flex-direction: column;
