@@ -1,35 +1,46 @@
-    /* navegation bar  */
-    
-    .titulo-fiji {
-        font-size: 1.5rem;
-    }
-    /* iconos de la nav */
-    
-    .icons-link {
-        display: flex;
-        align-content: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-right: 2%;
-        .search {
-            &:hover {
-                transition: all .2s;
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-        .bag {
-            &:hover {
-                transition: all .2s;
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-        .user {
-            &:hover {
-                transition: all .2s;
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-        }
-    }
+   /* navegation bar  */
+   
+   .header-navbar {
+       .header-content {
+           .offcanvas-body {
+               .nav {
+                   .nav-items {
+                       .nav-link {
+                           font-size: 1rem;
+                       }
+                   }
+               }
+           }
+           .titulo-fiji {
+               font-size: 1.5rem;
+           }
+           .icons-link {
+               display: flex;
+               align-content: center;
+               flex-direction: row;
+               justify-content: space-between;
+               padding-right: 2%;
+               .search {
+                   &:hover {
+                       transition: all .2s;
+                       cursor: pointer;
+                       transform: scale(1.1);
+                   }
+               }
+               .bag {
+                   &:hover {
+                       transition: all .2s;
+                       cursor: pointer;
+                       transform: scale(1.1);
+                   }
+               }
+               .user {
+                   &:hover {
+                       transition: all .2s;
+                       cursor: pointer;
+                       transform: scale(1.1);
+                   }
+               }
+           }
+       }
+   }

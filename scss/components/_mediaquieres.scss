@@ -2,11 +2,13 @@
             
             @media (min-width: 768px) {
                 .header-navbar {
-                    .inside-title {
-                        font-size: 1.6rem;
-                    }
-                    .titulo-fiji {
-                        font-size: 1.6rem;
+                    .header-content {
+                        .inside-title {
+                            font-size: 1.6rem;
+                        }
+                        .titulo-fiji {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
                 /* pagina home */
@@ -185,6 +187,9 @@
                 }
                 /* ==== pagina contact ==== */
                 .contacto {
+                    .container {
+                        flex-direction: column;
+                    }
                     h2 {
                         font-size: 1.5rem;
                         padding-bottom: 2%;
@@ -248,14 +253,13 @@
             
             @media (min-width: 1440px) {
                 .header-navbar {
-                    .menu-hamburguesa {
-                        font-size: 2.2em;
-                    }
-                    .inside-title {
-                        font-size: 2rem;
-                    }
-                    .titulo-fiji {
-                        font-size: 2rem;
+                    .header-content {
+                        .inside-title {
+                            font-size: 2rem;
+                        }
+                        .titulo-fiji {
+                            font-size: 2rem;
+                        }
                     }
                 }
                 /* pagina home */
@@ -452,6 +456,9 @@
                 }
                 /* ==== pagina contact ==== */
                 .contacto {
+                    .container {
+                        flex-direction: column;
+                    }
                     h2 {
                         font-size: 2.2rem;
                         padding-bottom: 2%;
