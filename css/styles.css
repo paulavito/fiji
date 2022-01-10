@@ -32,12 +32,12 @@
   color: #3b5998;
   box-shadow: 0 3px 15px 0 #ccd5ae; }
 
-.boton, .footer-arriba .newsletter-email .newsletter-content .boton-enviar, .pagina-articulos .info-articulos .boton-primario, .enviar input {
+.boton, .footer-arriba .newsletter-email .newsletter-content .boton-enviar, .pagina-articulos .info-articulos .boton-primario, .formulario form .enviar input {
   border: solid 2px #000000;
   background-color: #000000;
   color: #ffffff;
   border-radius: 4px; }
-  .boton:hover, .footer-arriba .newsletter-email .newsletter-content .boton-enviar:hover, .pagina-articulos .info-articulos .boton-primario:hover, .enviar input:hover {
+  .boton:hover, .footer-arriba .newsletter-email .newsletter-content .boton-enviar:hover, .pagina-articulos .info-articulos .boton-primario:hover, .formulario form .enviar input:hover {
     background-color: #ffffff;
     color: #000000;
     border-color: #000000; }
@@ -234,9 +234,6 @@
       height: 40px; }
 
 /* ==== pagina about us ==== */
-.imagen-team {
-  background-size: cover; }
-
 .info-nosotros {
   display: flex;
   flex-direction: column;
@@ -261,6 +258,8 @@
   font-size: 0.8rem;
   padding-left: 5%;
   padding-right: 5%; }
+  .info-fiji div .info-imagen {
+    display: none; }
   .info-fiji div h2 {
     align-items: center;
     justify-content: center;
@@ -302,19 +301,21 @@
     flex-wrap: wrap; }
     .formulario form div {
       padding: 5%; }
-
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 30px;
-  width: 250px; }
-
-.enviar input {
-  height: 40px;
-  width: 90px; }
-  .enviar input .click:hover {
-    animation: 0.7s click 1; }
+      .formulario form div .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        resize: none;
+        height: 30px;
+        width: 250px; }
+      .formulario form div .mensaje {
+        height: 80px;
+        width: 250px; }
+    .formulario form .enviar input {
+      height: 40px;
+      width: 90px; }
+      .formulario form .enviar input .click:hover {
+        animation: 0.7s click 1; }
 
 /* ====== Media Queries ======== */
 @media (min-width: 768px) {
@@ -437,6 +438,8 @@
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 3%; }
+    .info-fiji div .info-imagen {
+      display: block; }
     .info-fiji div h2 {
       margin-top: 4%;
       padding-bottom: 2%;
@@ -454,13 +457,16 @@
     font-size: 0.9rem; }
   .formulario form div {
     padding: 2%; }
-  .box {
-    height: 50px;
-    width: 500px; }
-  .enviar input {
+    .formulario form div .box {
+      height: 50px;
+      width: 500px; }
+    .formulario form div .mensaje {
+      height: 100px;
+      width: 500px; }
+  .formulario form .enviar input {
     height: 60px;
     width: 100px; }
-    .enviar input .click:hover {
+    .formulario form .enviar input .click:hover {
       animation: 0.7s click 1; }
   /* === scroll to-top ===*/
   #scroll {
@@ -556,8 +562,6 @@
   .pie .footer-contact {
     font-size: 1rem; }
   /* ==== pagina product ==== */
-  .articulos .img-fluid {
-    padding-top: none; }
   .container {
     display: flex;
     padding-top: 5%;
@@ -628,11 +632,14 @@
     padding-bottom: 2%; }
   .contacto p {
     font-size: 1.2rem; }
-  .box {
+  .formulario form div .box {
     height: 70px;
     width: 700px; }
-  .enviar .enviar input {
+  .formulario form div .mensaje {
+    height: 200px;
+    width: 700px; }
+  .formulario .enviar .enviar input {
     height: 30px;
     width: 100px; }
-    .enviar .enviar input .click:hover {
+    .formulario .enviar .enviar input .click:hover {
       animation: 0.7s click 1; } }

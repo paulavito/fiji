@@ -180,6 +180,9 @@
                     padding-left: 2%;
                     padding-right: 2%;
                     padding-bottom: 3%;
+                    .info-imagen {
+                        display: block;
+                    }
                     h2 {
                         margin-top: 4%;
                         padding-bottom: 2%;
@@ -207,18 +210,21 @@
                     form {
                         div {
                             padding: 2%;
+                            .box {
+                                @include size (50px, 500px)
+                            }
+                            .mensaje {
+                                @include size (100px, 500px)
+                            }
                         }
-                    }
-                }
-                .box {
-                    @include size (50px, 500px)
-                }
-                .enviar input {
-                    height: 60px;
-                    width: 100px;
-                    .click {
-                        &:hover {
-                            animation: 0.7s click 1;
+                        .enviar input {
+                            height: 60px;
+                            width: 100px;
+                            .click {
+                                &:hover {
+                                    animation: 0.7s click 1;
+                                }
+                            }
                         }
                     }
                 }
@@ -366,11 +372,6 @@
                     }
                 }
                 /* ==== pagina product ==== */
-                .articulos {
-                    .img-fluid {
-                        padding-top: none;
-                    }
-                }
                 .container {
                     display: flex;
                     padding-top: 5%;
@@ -474,16 +475,25 @@
                         font-size: 1.2rem;
                     }
                 }
-                .box {
-                    @include size (70px, 700px)
-                }
-                .enviar {
-                    .enviar input {
-                        height: 30px;
-                        width: 100px;
-                        .click {
-                            &:hover {
-                                animation: 0.7s click 1;
+                .formulario {
+                    form {
+                        div {
+                            .box {
+                                @include size (70px, 700px)
+                            }
+                            .mensaje {
+                                @include size (200px, 700px)
+                            }
+                        }
+                    }
+                    .enviar {
+                        .enviar input {
+                            height: 30px;
+                            width: 100px;
+                            .click {
+                                &:hover {
+                                    animation: 0.7s click 1;
+                                }
                             }
                         }
                     }
