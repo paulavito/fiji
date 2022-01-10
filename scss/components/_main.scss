@@ -166,10 +166,6 @@
 
 /* ==== pagina about us ==== */
 
-.imagen-team {
-    background-size: cover;
-}
-
 .info-nosotros {
     display: flex;
     flex-direction: column;
@@ -249,24 +245,26 @@
         flex-wrap: wrap;
         div {
             padding: 5%;
+            .box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                resize: none;
+                @include size (30px, 250px)
+            }
+            .mensaje {
+                @include size (80px, 250px)
+            }
         }
-    }
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    @include size (30px, 250px)
-}
-
-.enviar input {
-    @extend .boton;
-    height: 40px;
-    width: 90px;
-    .click {
-        &:hover {
-            animation: 0.7s click 1;
+        .enviar input {
+            @extend .boton;
+            height: 40px;
+            width: 90px;
+            .click {
+                &:hover {
+                    animation: 0.7s click 1;
+                }
+            }
         }
     }
 }
