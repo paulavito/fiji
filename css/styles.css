@@ -258,6 +258,8 @@
   font-size: 0.8rem;
   padding-left: 5%;
   padding-right: 5%; }
+  .info-fiji div .info-imagen {
+    display: none; }
   .info-fiji div h2 {
     align-items: center;
     justify-content: center;
@@ -436,6 +438,8 @@
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 3%; }
+    .info-fiji div .info-imagen {
+      display: block; }
     .info-fiji div h2 {
       margin-top: 4%;
       padding-bottom: 2%;
