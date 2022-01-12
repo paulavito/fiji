@@ -1,25 +1,51 @@
    /* navegation bar  */
    
    .header-navbar {
+       padding: 0.5rem;
        .header-content {
+           padding: 0rem;
+           .navbar-toggler {
+               &:hover {
+                   transition: all .2s;
+                   cursor: pointer;
+                   transform: scale(1.1);
+               }
+           }
            .offcanvas-body {
                .nav {
                    .nav-items {
                        .nav-link {
-                           font-size: 1rem;
+                           font-size: $font-size-1;
+                           text-decoration: none;
+                           background-image: linear-gradient($color-black, $color-black);
+                           background-position: 0% 100%;
+                           background-repeat: no-repeat;
+                           background-size: 0% 2px;
+                           transition: background-size .3s;
+                           &:hover,
+                           a:focus {
+                               background-size: 100% 2px;
+                           }
                        }
                    }
                }
            }
            .titulo-fiji {
-               font-size: 1.5rem;
+               font-size: $font-size-1-5;
+               margin-right: 0rem;
+               padding: 0rem;
+               &:hover {
+                   transition: all .2s;
+                   cursor: pointer;
+                   transform: scale(1.1);
+               }
            }
            .icons-link {
                display: flex;
                align-content: center;
                flex-direction: row;
                justify-content: space-between;
-               padding-right: 2%;
+               padding-right: 0.75rem;
                .search {
                    &:hover {
                        transition: all .2s;
