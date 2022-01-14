@@ -257,8 +257,11 @@
       height: 40px; }
 
 /* ==== pagina about us ==== */
-.imagen-team {
-  width: 100%; }
+.container-about {
+  justify-content: center; }
+  .container-about .imagen-team {
+    width: 100%;
+    max-width: 500px; }
 
 .info-nosotros {
   display: flex;
@@ -460,8 +463,9 @@
   /* ==== pagina about us ==== */
   .container-about {
     justify-content: center; }
-    .container-about .row .container-imagen {
-      margin-top: 8; }
+    .container-about .imagen-team {
+      width: 100%;
+      max-width: 1000px; }
   .info-nosotros h2 {
     font-size: 1.5rem; }
   .info-nosotros p {
