@@ -167,8 +167,12 @@
 
 /* ==== pagina about us ==== */
 
-.imagen-team {
-    width: 100%;
+.container-about {
+    justify-content: center;
+    .imagen-team {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 .info-nosotros {
