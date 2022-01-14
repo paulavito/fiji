@@ -182,9 +182,6 @@
           width: 80%;
           max-width: 400px; }
 
-.productos-fiji-down .imagen-vela {
-  width: 100%; }
-
 .productos-fiji-down .card-body h3 {
   font-size: 1.1rem; }
 
@@ -260,6 +257,9 @@
       height: 40px; }
 
 /* ==== pagina about us ==== */
+.imagen-team {
+  width: 100%; }
+
 .info-nosotros {
   display: flex;
   flex-direction: column;
